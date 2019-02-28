@@ -1,0 +1,10 @@
+# This is Git's per-user configuration file.
+[user]
+name = Casey Flynn
+email = cflynn.us@gmail.com
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[url "ssh://git@gitlab.com/"]
+	insteadOf = https://gitlab.com/
+[hub]
+	protocol = ssh

@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+BIN_NAME=$(basename "$0")
+COMMAND_NAME=$1
+SUB_COMMAND_NAME=$2
+
+ARROW="￫"
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NC='\033[0m'
+
+# Get dotfiles dir (so run this script from anywhere)
+export DOTFILES_DIR EXTRA_DIR
+DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
+
+sub_help () {
+    echo -e "$ARROW Usage: ${YELLOW}$BIN_NAME <command>${NC}"
+    echo
+    echo "Commands:"
+    echo "   help             This help message"
+    echo "   symlinks         Run symlinks script"
+}
+
+sub_symlinks () {
+    ln -sfv "$DOTFILES_DIR/dots/.gitconfig" ~
+    ln -sfv "$DOTFILES_DIR/dots/.slate" ~
+    ln -sfv "$DOTFILES_DIR/dots/.vimrc" ~
+    ln -sfv "$DOTFILES_DIR/dots/.zshrc" ~
+    echo -e "${GREEN}$ARROW Success! Symlinks command finished.${NC}"
+}
+
+case $COMMAND_NAME in
+    "" | "-h" | "--help")
+        sub_help
+        ;;
+    *)
+        shift
+        sub_${COMMAND_NAME} $@
+        if [ $? = 127 ]; then
+            echo -e "${RED}$ARROW Error: '$COMMAND_NAME' is not a known command or has errors.${NC}" >&2
+            sub_help
+            exit 1
+        fi
+        ;;
+esac
