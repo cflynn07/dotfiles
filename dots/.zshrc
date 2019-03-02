@@ -63,3 +63,6 @@ if [ -f '/Users/caseyflynn/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/case
 if [ -f '/Users/caseyflynn/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/caseyflynn/google-cloud-sdk/completion.zsh.inc'; fi
 
 export PATH=$PATH:~/go/bin
+
+# Prevent terminal from auto renaming tab titles
+export DISABLE_AUTO_TITLE="true"
