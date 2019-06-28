@@ -10,6 +10,8 @@ Simple dotfiles repo. Contains a bash script to quickly create symlinks
 - .slate
 - .vimrc
 - .zshrc
+- antigen.zsh
+- plug.vim
 
 ```bash
 $ ./bin/dotfiles symlinks
