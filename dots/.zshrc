@@ -1,7 +1,7 @@
 # Casey Flynn <cflynn.us@gmail.com>
 # January 18, 2019
 
-source /Users/caseyflynn/antigen.zsh
+source /Users/$USER/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -57,10 +57,10 @@ bindkey -v
 alias git='hub'
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/caseyflynn/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/caseyflynn/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/$USER/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/$USER/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/caseyflynn/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/caseyflynn/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/$USER/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/$USER/google-cloud-sdk/completion.zsh.inc'; fi
 
 export PATH=$PATH:~/go/bin
 
