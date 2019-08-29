@@ -56,13 +56,14 @@ bindkey -v
 
 alias git='hub'
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/$USER/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/$USER/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/$USER/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/$USER/google-cloud-sdk/completion.zsh.inc'; fi
-
 export PATH=$PATH:~/go/bin
+export PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
 
 # Prevent terminal from auto renaming tab titles
 export DISABLE_AUTO_TITLE="true"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/casey/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/casey/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/casey/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/casey/google-cloud-sdk/completion.zsh.inc'; fi
