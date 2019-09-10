@@ -1,6 +1,9 @@
 # Casey Flynn <cflynn.us@gmail.com>
 # January 18, 2019
 
+# tmux
+export TERM="xterm-256color"
+
 source /Users/$USER/antigen.zsh
 
 # Load the oh-my-zsh's library.
