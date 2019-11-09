@@ -19,6 +19,7 @@ $ ./bin/dotfiles symlinks
 
 Notes:
 - Font: 12pt Fura Code Retina Nerd Font Complete Mono
-- Color: Elemental
+- iTerm2 colorscheme: thayer
+- vim colorscheme: delek
 
-![screenshot](https://raw.githubusercontent.com/cflynn07/dotfiles/master/Screen%20Shot%202019-03-02%20at%204.47.42%20PM.png)
+![screenshot](https://raw.githubusercontent.com/cflynn07/dotfiles/master/Screen%20Shot%202019-11-09%20at%206.09.28%20PM.png)

@@ -56,6 +56,12 @@ nnoremap <C-H> <C-W><C-H>
 set nu
 
 " -----------------------------------------------------------------------------
+" Colorscheme
+colorscheme delek
+highlight ColorColumn ctermbg=7
+highlight ColorColumn guibg=Gray
+
+" -----------------------------------------------------------------------------
 " NERDTree configuration
 
 autocmd vimenter * NERDTree
@@ -102,6 +108,7 @@ let g:syntastic_check_on_wq = 0
 
 " -----------------------------------------------------------------------------
 " JSBeautify
+
 map <c-f> :call JsBeautify()<cr>
 " or
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
@@ -116,6 +123,7 @@ autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 
 " -----------------------------------------------------------------------------
 " ale
+
 let g:ale_linters = {
 \   'javascript': ['standard'],
 \}
@@ -123,4 +131,5 @@ let g:ale_fixers = {'javascript': ['standard']}
 
 " -----------------------------------------------------------------------------
 " Emmet
+
 let g:user_emmet_leader_key=','
