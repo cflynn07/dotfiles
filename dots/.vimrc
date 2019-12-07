@@ -65,7 +65,7 @@ highlight ColorColumn guibg=Gray
 " -----------------------------------------------------------------------------
 " NERDTree configuration
 
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree - disable NERDTree open on start
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'

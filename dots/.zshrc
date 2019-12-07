@@ -6,6 +6,10 @@ export TERM="xterm-256color"
 
 source /Users/$USER/antigen.zsh
 
+# open vim when entering visual mode for easier long command editing
+bindkey -M vicmd v edit-command-line
+EDITOR=/usr/bin/vim
+
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
@@ -70,3 +74,6 @@ if [ -f '/Users/casey/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/casey/goo
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/casey/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/casey/google-cloud-sdk/completion.zsh.inc'; fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
