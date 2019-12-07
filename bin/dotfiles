@@ -33,6 +33,10 @@ sub_symlinks () {
     echo -e "${GREEN}$ARROW Success! Symlinks command finished.${NC}"
 }
 
+sub_tools () {
+    brew install peco yank
+}
+
 case $COMMAND_NAME in
     "" | "-h" | "--help")
         sub_help
