@@ -32,6 +32,7 @@ set autowrite
 set backspace=indent,eol,start
 set encoding=utf-8
 set expandtab
+set hlsearch
 set ignorecase
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 set noswapfile
