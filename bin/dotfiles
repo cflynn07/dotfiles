@@ -2,7 +2,6 @@
 
 BIN_NAME=$(basename "$0")
 COMMAND_NAME=$1
-SUB_COMMAND_NAME=$2
 
 ARROW="￫"
 RED='\033[0;31m'
@@ -43,7 +42,7 @@ case $COMMAND_NAME in
         ;;
     *)
         shift
-        sub_${COMMAND_NAME} $@
+        sub_"${COMMAND_NAME}" "$@"
         if [ $? = 127 ]; then
             echo -e "${RED}$ARROW Error: '$COMMAND_NAME' is not a known command or has errors.${NC}" >&2
             sub_help
