@@ -34,7 +34,7 @@ sub_symlinks () {
 }
 
 sub_tools () {
-    brew install peco yank
+    brew install peco yank spellcheck
 }
 
 case $COMMAND_NAME in

@@ -4,7 +4,7 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
-" Plug 'vim-syntastic/syntastic'
+Plug 'vim-syntastic/syntastic'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'fatih/vim-go'
