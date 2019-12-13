@@ -33,7 +33,8 @@ sub_symlinks () {
 }
 
 sub_tools () {
-    brew install peco yank shellcheck
+    brew install peco yank shellcheck hexyl
+    gem install bropages
 }
 
 case $COMMAND_NAME in

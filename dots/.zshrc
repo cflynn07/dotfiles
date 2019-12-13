@@ -1,9 +1,12 @@
 # Casey Flynn <cflynn.us@gmail.com>
 # January 18, 2019
 
+alias git='hub'
+alias python=/usr/local/bin/python3
+alias pip=/usr/local/bin/pip3
+
 # tmux
 export TERM="xterm-256color"
-
 source /Users/$USER/antigen.zsh
 
 # open vim when entering visual mode for easier long command editing
@@ -61,10 +64,9 @@ antigen apply
 export KEYTIMEOUT=1
 bindkey -v
 
-alias git='hub'
-
-export PATH=$PATH:~/go/bin
-export PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
+PATH=$PATH:$HOME/go/bin
+PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
+export PATH
 
 # Prevent terminal from auto renaming tab titles
 export DISABLE_AUTO_TITLE="true"
@@ -76,4 +78,3 @@ if [ -f '/Users/casey/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/casey/goo
 if [ -f '/Users/casey/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/casey/google-cloud-sdk/completion.zsh.inc'; fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-

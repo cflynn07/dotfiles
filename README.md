@@ -31,6 +31,8 @@ Notes:
   - [yank](https://github.com/mptre/yank)
   - [tig](https://github.com/jonas/tig)
   - [shellcheck](https://github.com/koalaman/shellcheck) a static analysis tool for shell scripts
+  - [bropages](https://github.com/hubsmoke/bro) a CLI to interact with bropages.org (http://bropages.org)
+  - [hexyl](https://github.com/sharkdp/hexyl) CLI hex viewer with nice color codings
 
 ![screenshot](https://raw.githubusercontent.com/cflynn07/dotfiles/master/Screen%20Shot%202019-11-09%20at%206.09.28%20PM.png)
 ![screenshot](https://raw.githubusercontent.com/cflynn07/dotfiles/master/Screen%20Shot%202019-12-07%20at%209.45.31%20PM.png)
