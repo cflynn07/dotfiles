@@ -29,11 +29,12 @@ sub_symlinks () {
     ln -sfv "$DOTFILES_DIR/dots/.zshrc" ~
     ln -sfv "$DOTFILES_DIR/configs/antigen.zsh" ~
     ln -sfv "$DOTFILES_DIR/configs/plug.vim" ~/.vim/autoload/plug.vim
+    ln -sfv "$DOTFILES_DIR/configs/lynx.cfg " /usr/local/etc/lynx.cfg
     echo -e "${GREEN}$ARROW Success! Symlinks command finished.${NC}"
 }
 
 sub_tools () {
-    brew install peco yank shellcheck hexyl
+    brew install peco yank shellcheck hexyl lynx
     gem install bropages
 }
 
