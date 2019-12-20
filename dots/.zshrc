@@ -1,6 +1,9 @@
 # Casey Flynn <cflynn.us@gmail.com>
 # January 18, 2019
 
+export WORKSPACE_DIR=$HOME/Dropbox/workspace
+source "$WORKSPACE_DIR/dotfiles/functions/index.sh"
+
 alias git='hub'
 alias python=/usr/local/bin/python3
 alias pip=/usr/local/bin/pip3
@@ -34,8 +37,8 @@ antigen bundle zsh-users/zsh-autosuggestions
 # https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/FiraCode/Retina/complete/Fura%20Code%20Retina%20Nerd%20Font%20Complete%20Mono.otf
 POWERLEVEL9K_MODE='nerdfont-complete' # Required by powerlevel9k
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(kubecontext dir vcs status)
-# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator vi_mode time)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode background_jobs)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
 POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='dodgerblue2'
