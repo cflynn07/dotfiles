@@ -58,6 +58,7 @@ npl() {
     # shellcheck disable=SC2039
     POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
     POWERLEVEL9K_PROMPT_ON_NEWLINE=false
+
   elif [[ $npli -eq 3 ]]; then
     echo "MICRO"
     # \shellcheck doesn't know this is zsh not bash
