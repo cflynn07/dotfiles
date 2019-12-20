@@ -6,7 +6,7 @@
 npli=0
 npl() {
   clear
-  if ! [[ -z "$1" ]]; then
+  if [[ -n "$1" ]]; then
     case "$1" in
       "full")
         npli=0
@@ -17,13 +17,16 @@ npl() {
       "min")
         npli=2
         ;;
+      "micro")
+        npli=3
+        ;;
       *)
-        echo "usage: $0 full|basic|min)"
+        echo "usage: $0 full|basic|min|micro)"
         return
         ;;
     esac
   else
-    npli=$(((npli + 1) % 3))
+    npli=$(((npli + 1) % 4))
   fi
 
   # 0 full powerline prompt
@@ -52,6 +55,14 @@ npl() {
     # \shellcheck doesn't know this is zsh not bash
     # shellcheck disable=SC2039
     POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir)
+    # shellcheck disable=SC2039
+    POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+    POWERLEVEL9K_PROMPT_ON_NEWLINE=false
+  elif [[ $npli -eq 3 ]]; then
+    echo "MICRO"
+    # \shellcheck doesn't know this is zsh not bash
+    # shellcheck disable=SC2039
+    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=()
     # shellcheck disable=SC2039
     POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
     POWERLEVEL9K_PROMPT_ON_NEWLINE=false
