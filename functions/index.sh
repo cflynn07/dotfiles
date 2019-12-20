@@ -5,7 +5,6 @@
 #   * mode - full|basic|min predefined powerline configurations
 npli=0
 npl() {
-  clear
   if [[ -n "$1" ]]; then
     case "$1" in
       "full")
