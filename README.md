@@ -23,7 +23,7 @@ $ ./bin/dotfiles tools
 ```
 
 Notes:
-- Font: 12pt Fura Code Retina Nerd Font Complete Mono
+- Font: Fira Code (patched)
 - iTerm2 colorscheme: thayer
 - vim colorscheme: delek
 - tools:

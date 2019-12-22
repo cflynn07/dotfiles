@@ -34,11 +34,23 @@ sub_symlinks () {
 }
 
 sub_tools () {
+    # Misc tools
     brew install peco yank shellcheck hexyl lynx
+
+    # Fonts!
+    brew tap homebrew/cask-fonts
+    brew cask install font-firacode-nerd-font-mono
+
     # prebuild binary installs...
     brew cask install google-chrome
     brew cask install mailplane
     brew cask install iterm2
+
+    # Specify the preferences directory
+    defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DOTFILES_DIR/iterm2_profile"
+    # Tell iTerm2 to use the custom preferences in the directory
+    defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
     gem install bropages
 
     # install slate window management tool

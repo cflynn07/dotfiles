@@ -35,8 +35,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 
 # Powerlevel9k configuration
-# Fura Code Retina Nerd Font Complete Mono
-# https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/FiraCode/Retina/complete/Fura%20Code%20Retina%20Nerd%20Font%20Complete%20Mono.otf
 POWERLEVEL9K_MODE='nerdfont-complete' # Required by powerlevel9k
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(kubecontext dir vcs status)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode)

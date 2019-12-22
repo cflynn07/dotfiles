@@ -52489,7 +52489,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>127 443 592 584 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1680 -642 3008 1669 1680 -642 3008 1669 </string>
+	<string>1680 -642 3006 1669 1680 -642 3008 1669 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>840 0 836 1027 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -52498,6 +52498,8 @@
 	<array>
 		<dict>
 			<key>ASCII Anti Aliased</key>
+			<true/>
+			<key>ASCII Ligatures</key>
 			<true/>
 			<key>Ambiguous Double Width</key>
 			<false/>
@@ -53066,7 +53068,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FuraCodeNerdFontCompleteM-Retina 12</string>
+			<string>FiraCode-Regular 12</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -53735,7 +53737,7 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>FuraCode Nerd Font Mono</string>
+		<string>Fira Code</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -53751,7 +53753,7 @@
 		<key>screenFrame</key>
 		<string>{{1680, -642}, {3008, 1692}}</string>
 		<key>topLeft</key>
-		<string>{2540, 896}</string>
+		<string>{2628, 459}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
@@ -53760,7 +53762,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>583090930.58847702</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>23</integer>
+	<integer>24</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>588333077.305794</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
