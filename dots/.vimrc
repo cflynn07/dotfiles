@@ -8,7 +8,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'fatih/vim-go'
-" Plug 'frazrepo/vim-rainbow'
+" Plug 'frazrepo/vim-rainbow' *performance issues
 Plug 'gcmt/taboo.vim'
 Plug 'godlygeek/tabular'
 Plug 'itchyny/lightline.vim'
