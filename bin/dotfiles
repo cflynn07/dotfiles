@@ -35,7 +35,7 @@ sub_symlinks () {
 
 sub_tools () {
     # Misc tools
-    brew install peco yank shellcheck hexyl lynx
+    brew install peco yank shellcheck hexyl lynx kubernetes-helm skaffold
 
     # Fonts!
     brew tap homebrew/cask-fonts
