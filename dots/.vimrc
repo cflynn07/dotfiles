@@ -4,10 +4,11 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
+" Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'fatih/vim-go'
-Plug 'frazrepo/vim-rainbow'
+" Plug 'frazrepo/vim-rainbow'
 Plug 'gcmt/taboo.vim'
 Plug 'godlygeek/tabular'
 Plug 'itchyny/lightline.vim'
@@ -20,8 +21,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'tomtom/tcomment_vim'
 Plug 'vim-syntastic/syntastic'
-Plug 'vim/killersheep'
+" Plug 'vim/killersheep'
 Plug 'w0rp/ale'
+" Plug 'vim-scripts/taglist.vim'
 
 call plug#end()
 
@@ -99,6 +101,9 @@ nnoremap <silent> <Leader>bl :setnomodifiable<CR> " (L)ock the current buffer"
 
 set laststatus=2
 set noshowmode
+let g:lightline = {
+  \ 'colorscheme': 'one',
+  \ }
 
 " -----------------------------------------------------------------------------
 " Syntastic
