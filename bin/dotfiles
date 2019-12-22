@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 BIN_NAME=$(basename "$0")
 COMMAND_NAME=$1
@@ -36,6 +36,15 @@ sub_symlinks () {
 sub_tools () {
     brew install peco yank shellcheck hexyl lynx
     gem install bropages
+
+    # install slate window management tool
+    cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
+}
+
+# Just set the background to my preferred background image
+sub_misc () {
+  sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '$DOTFILES_DIR/backgrounds/flat-landscape-minimalism-trees-sunset-river-artwork.jpeg'";
+  killall Dock;
 }
 
 case $COMMAND_NAME in
