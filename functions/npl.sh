@@ -3,7 +3,6 @@
 # Next Powerline
 # Rotate through powerline configurations
 #   * mode - full|basic|min predefined powerline configurations
-npli=0
 npl() {
   if [[ -n "$1" ]]; then
     case "$1" in
@@ -25,7 +24,7 @@ npl() {
         ;;
     esac
   else
-    npli=$(((npli + 1) % 4))
+    npli=$(((${npli-0} + 1) % 4))
   fi
 
   # 0 full powerline prompt
