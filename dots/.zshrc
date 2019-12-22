@@ -2,7 +2,9 @@
 # January 18, 2019
 
 export WORKSPACE_DIR=$HOME/Dropbox/workspace
-source $WORKSPACE_DIR/dotfiles/functions/*.sh
+for source_target in $WORKSPACE_DIR/dotfiles/functions/*.sh; do
+  source "$source_target"
+done
 
 alias git='hub'
 alias python=/usr/local/bin/python3
