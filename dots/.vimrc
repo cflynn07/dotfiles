@@ -7,6 +7,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'fatih/vim-go'
+Plug 'frazrepo/vim-rainbow'
 Plug 'gcmt/taboo.vim'
 Plug 'godlygeek/tabular'
 Plug 'itchyny/lightline.vim'
@@ -137,3 +138,8 @@ let g:ale_fixers = {'javascript': ['standard']}
 " Emmet
 
 let g:user_emmet_leader_key=','
+
+" -----------------------------------------------------------------------------
+" Vim-Rainbow
+
+let g:rainbow_active = 1
