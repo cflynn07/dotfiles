@@ -35,10 +35,31 @@ sub_symlinks () {
 
 sub_tools () {
     brew install peco yank shellcheck hexyl lynx
+    # prebuild binary installs...
+    brew cask install google-chrome
+    brew cask install mailplane
+    brew cask install iterm2
     gem install bropages
 
     # install slate window management tool
     cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
+
+    # install Docker for mac...
+    PWD=$(pwd)
+    cd /tmp || exit 1
+    curl -LOC - https://download.docker.com/mac/stable/Docker.dmg
+    sudo hdiutil attach Docker.dmg
+    cp -r /Volumes/Docker/Docker.app /Applications
+    sudo hdiutil detach /Volumes/Docker
+    rm Docker.dmg
+    cd PWD || exit 1
+
+    VIRTUAL_BOX="VirtualBox-6.1.0-135406-OSX.dmg"
+    curl -LOC - "https://download.virtualbox.org/virtualbox/6.1.0/$VIRTUAL_BOX"
+    sudo hdiutil attach "$VIRTUAL_BOX"
+    sudo installer -pkg /Volumes/VirtualBox/VirtualBox.pkg -target /
+    sudo hdiutil detach /Volumes/VirtualBox
+    rm "$VIRTUAL_BOX"
 }
 
 # Just set the background to my preferred background image
