@@ -2,7 +2,7 @@
 
 # Next Powerline
 # Rotate through powerline configurations
-#   * mode - full|basic|min predefined powerline configurations
+#   * mode - full|basic|min|mingit|micro [nl] predefined powerline configurations
 npl() {
   if [[ -n "$1" ]]; then
     case "$1" in
@@ -15,11 +15,14 @@ npl() {
       "min")
         npli=2
         ;;
-      "micro")
+      "mingit")
         npli=3
         ;;
+      "micro")
+        npli=4
+        ;;
       *)
-        echo "usage: $0 full|basic|min|micro)"
+        echo "usage: $0 full|basic|min|mingit|micro [nl])"
         return
         ;;
     esac
@@ -58,6 +61,15 @@ npl() {
     POWERLEVEL9K_PROMPT_ON_NEWLINE=false
 
   elif [[ $npli -eq 3 ]]; then
+    echo "MINGIT"
+    # \shellcheck doesn't know this is zsh not bash
+    # shellcheck disable=SC2039
+    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vcs)
+    # shellcheck disable=SC2039
+    POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+    POWERLEVEL9K_PROMPT_ON_NEWLINE=false
+   
+  elif [[ $npli -eq 4 ]]; then
     echo "MICRO"
     # \shellcheck doesn't know this is zsh not bash
     # shellcheck disable=SC2039
@@ -65,6 +77,10 @@ npl() {
     # shellcheck disable=SC2039
     POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
     POWERLEVEL9K_PROMPT_ON_NEWLINE=false
+  fi
+
+  if [[ -n "$2" ]] && [[ "$2" == "nl" ]]; then
+    POWERLEVEL9K_PROMPT_ON_NEWLINE=true
   fi
   prompt_powerlevel9k_setup
 }
