@@ -7,6 +7,7 @@ for source_target in $WORKSPACE_DIR/dotfiles/functions/*.sh; do
 done
 
 alias git='hub'
+alias vim='nvim'
 alias python=/usr/local/bin/python3
 alias pip=/usr/local/bin/pip3
 

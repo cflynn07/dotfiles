@@ -4,26 +4,86 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
-" Plug 'airblade/vim-gitgutter'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'editorconfig/editorconfig-vim'
 Plug 'fatih/vim-go'
+" Plug 'airblade/vim-gitgutter'
+" ---
+" A Vim plugin which shows a git diff in the 'gutter' (sign column). It shows
+" which lines have been added, modified, or removed. You can also preview,
+" stage, and undo individual hunks; and stage partial hunks. The plugin also
+" provides a hunk text object.
+"
+" Plug 'editorconfig/editorconfig-vim'
+" ---
+" EditorConfig helps maintain consistent coding styles for multiple developers
+" working on the same project across various editors and IDEs. The
+" EditorConfig project consists of a file format for defining coding styles
+" and a collection of text editor plugins that enable editors to read the file
+" format and adhere to defined styles. EditorConfig files are easily readable
+" and they work nicely with version control systems.
+"
 " Plug 'frazrepo/vim-rainbow' *performance issues
-Plug 'gcmt/taboo.vim'
-Plug 'godlygeek/tabular'
+"   ALT /luochen1990/rainbow
+"
+" Plug 'godlygeek/tabular'
+" ---
+" http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
+" Sometimes, it's useful to line up text. Naturally, it's nicer to have the
+" computer do this for you, since aligning things by hand quickly becomes
+" unpleasant. While there are other plugins for aligning text, the ones I've
+" tried are either impossibly difficult to understand and use, or too
+" simplistic to handle complicated tasks. This plugin aims to make the easy
+" things easy and the hard things possible, without providing an unnecessarily
+" obtuse interface. It's still a work in progress, and criticisms are
+" welcome.
+" 
+" Plug 'maksimr/vim-jsbeautify'
+Plug 'sheerun/vim-polyglot'
+" ---
+" A collection of language packs for Vim.
+"
+" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+" This adds syntax for nerdtree on most common file extensions. Whether you
+" want to easily see what is going on in a new project, trying to learn a new
+" framework with a different folder structure, or just trying to make your
+" NERDTree look better, this plugin can help you. This is intended to be used
+" with vim-devicons to add color to icons or entire labels, but will work
+" without it. It is possible to disable highlight, but the syntax will still
+" be available if you want to make something specific with it. The file icons
+" are linked to their labels which are linked to NERDTreeFile, so it will not
+" break anything.
+"
+" Plug 'tomtom/tcomment_vim'
+" ---
+" tcomment provides easy to use, file-type sensible comments for Vim. It can
+" handle embedded syntax.
+
+" Plug 'vim-scripts/taglist.vim'
+" ---
+" The "Tag List" plugin is a source code browser plugin for Vim and provides
+" an overview of the structure of source code files and allows you to
+" efficiently browse through source code files for different programming
+" languages.
+"
+" Plug 'vim/killersheep'
+" ---
+" Game
+"
+Plug 'dense-analysis/ale'
+" ---
+" ALE (Asynchronous Lint Engine) is a plugin providing linting (syntax
+" checking and semantic errors) in NeoVim 0.2.0+ and Vim 8 while you edit your
+" text files, and acts as a Vim Language Server Protocol client.
+"
+" lug 'gcmt/taboo.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
-Plug 'junegunn/goyo.vim'
-Plug 'maksimr/vim-jsbeautify'
+" Plug 'vim-syntastic/syntastic'
 Plug 'mattn/emmet-vim'
+" ---
+" emmet-vim is a vim plug-in which provides support for expanding
+" abbreviations similar to emmet.
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
-Plug 'sheerun/vim-polyglot'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'tomtom/tcomment_vim'
-Plug 'vim-syntastic/syntastic'
-" Plug 'vim/killersheep'
-Plug 'w0rp/ale'
-" Plug 'vim-scripts/taglist.vim'
 
 call plug#end()
 
@@ -108,28 +168,28 @@ let g:lightline = {
 " -----------------------------------------------------------------------------
 " Syntastic
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
 
 " -----------------------------------------------------------------------------
 " JSBeautify
 
-map <c-f> :call JsBeautify()<cr>
-" or
-autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
-" for json
-autocmd FileType json noremap <buffer> <c-f> :call JsonBeautify()<cr>
-" for jsx
-autocmd FileType jsx noremap <buffer> <c-f> :call JsxBeautify()<cr>
-" for html
-autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
-" for css or scss
-autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+"map <c-f> :call JsBeautify()<cr>
+"" or
+"autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+"" for json
+"autocmd FileType json noremap <buffer> <c-f> :call JsonBeautify()<cr>
+"" for jsx
+"autocmd FileType jsx noremap <buffer> <c-f> :call JsxBeautify()<cr>
+"" for html
+"autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+"" for css or scss
+"autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 
 " -----------------------------------------------------------------------------
 " ale

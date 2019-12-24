@@ -26,6 +26,8 @@ sub_symlinks () {
     ln -sfv "$DOTFILES_DIR/dots/.slate" ~
     ln -sfv "$DOTFILES_DIR/dots/.tmux.conf" ~
     ln -sfv "$DOTFILES_DIR/dots/.vimrc" ~
+    mkdir -p ~/.config/nvim/
+    ln -sfv "$DOTFILES_DIR/dots/.config/nvim/init.vim" ~/.config/nvim/init.vim
     ln -sfv "$DOTFILES_DIR/dots/.zshrc" ~
     ln -sfv "$DOTFILES_DIR/configs/antigen.zsh" ~
     ln -sfv "$DOTFILES_DIR/configs/plug.vim" ~/.vim/autoload/plug.vim
@@ -35,7 +37,7 @@ sub_symlinks () {
 
 sub_tools () {
     # Misc tools
-    brew install peco yank shellcheck hexyl lynx kubernetes-helm skaffold
+    brew install peco yank shellcheck hexyl lynx kubernetes-helm skaffold neovim
 
     # Fonts!
     brew tap homebrew/cask-fonts
