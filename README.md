@@ -38,4 +38,4 @@ Notes:
   - [tig](https://github.com/jonas/tig)
   - [yank](https://github.com/mptre/yank)
 
-![screenshot](https://raw.githubusercontent.com/cflynn07/dotfiles/master/Screen%20Shot%202019-12-29%20at%207.47.13%20PM.png)
+![screenshot](https://raw.githubusercontent.com/cflynn07/dotfiles/master/Screen%20Shot%202019-12-29%20at%207.50.32%20PM.png)
