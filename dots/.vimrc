@@ -84,6 +84,7 @@ Plug 'mattn/emmet-vim'
 " abbreviations similar to emmet.
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
+Plug 'rafi/awesome-vim-colorschemes'
 
 call plug#end()
 
