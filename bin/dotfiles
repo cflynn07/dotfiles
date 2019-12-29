@@ -32,6 +32,7 @@ sub_symlinks () {
     ln -sfv "$DOTFILES_DIR/configs/antigen.zsh" ~
     ln -sfv "$DOTFILES_DIR/configs/plug.vim" ~/.vim/autoload/plug.vim
     ln -sfv "$DOTFILES_DIR/configs/lynx.cfg " /usr/local/etc/lynx.cfg
+    ln -sfv "$DOTFILES_DIR/configs/powerline" ~/.config/powerline
     echo -e "${GREEN}$ARROW Success! Symlinks command finished.${NC}"
 }
 
@@ -57,6 +58,9 @@ sub_tools () {
     defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
     gem install bropages
+
+    pip3 install powerline-status
+    pip3 install --user powerline-status psutl
 
     # install slate window management tool
     cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
