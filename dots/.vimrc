@@ -76,7 +76,11 @@ Plug 'dense-analysis/ale'
 "
 Plug 'gcmt/taboo.vim'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'itchyny/lightline.vim'
+
+" Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 " Plug 'vim-syntastic/syntastic'
 Plug 'mattn/emmet-vim'
 " ---
@@ -160,11 +164,16 @@ nnoremap <silent> <Leader>bl :setnomodifiable<CR> " (L)ock the current buffer"
 " -----------------------------------------------------------------------------
 " Lightline
 
-set laststatus=2
-set noshowmode
-let g:lightline = {
-  \ 'colorscheme': 'one',
-  \ }
+"set laststatus=2
+"set noshowmode
+"let g:lightline = {
+"  \ 'colorscheme': 'one',
+"  \ }
+
+" -----------------------------------------------------------------------------
+" Airline
+" let g:airline_statusline_ontop=1
+let g:airline_theme='dark'
 
 " -----------------------------------------------------------------------------
 " Syntastic
@@ -202,6 +211,7 @@ let g:ale_fixers = {'javascript': ['standard']}
 
 " -----------------------------------------------------------------------------
 " Taboo
+
 let g:taboo_tab_format=' %N %f%m(%W) '
 let g:taboo_renamed_tab_format=' %N %l(%W) '
 
@@ -213,4 +223,4 @@ let g:user_emmet_leader_key=','
 " -----------------------------------------------------------------------------
 " Vim-Rainbow
 
-let g:rainbow_active = 1
+" let g:rainbow_active = 1
