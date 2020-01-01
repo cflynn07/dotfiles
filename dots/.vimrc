@@ -201,6 +201,11 @@ let g:ale_linters = {
 let g:ale_fixers = {'javascript': ['standard']}
 
 " -----------------------------------------------------------------------------
+" Taboo
+let g:taboo_tab_format=' %N %f%m(%W) '
+let g:taboo_renamed_tab_format=' %N %l(%W) '
+
+" -----------------------------------------------------------------------------
 " Emmet
 
 let g:user_emmet_leader_key=','
