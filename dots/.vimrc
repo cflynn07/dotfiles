@@ -74,7 +74,7 @@ Plug 'dense-analysis/ale'
 " checking and semantic errors) in NeoVim 0.2.0+ and Vim 8 while you edit your
 " text files, and acts as a Vim Language Server Protocol client.
 "
-" lug 'gcmt/taboo.vim'
+Plug 'gcmt/taboo.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
 " Plug 'vim-syntastic/syntastic'
