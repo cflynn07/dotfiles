@@ -17,7 +17,7 @@ source /Users/$USER/antigen.zsh
 
 # open vim when entering visual mode for easier long command editing
 bindkey -M vicmd v edit-command-line
-EDITOR=/usr/bin/vim
+EDITOR=/usr/local/bin/nvim
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
