@@ -89,6 +89,7 @@ Plug 'mattn/emmet-vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'Asheq/close-buffers.vim'
 
 call plug#end()
 
@@ -130,8 +131,10 @@ set nu
 " -----------------------------------------------------------------------------
 " Colorscheme
 colorscheme delek
-highlight ColorColumn ctermbg=7
-highlight ColorColumn guibg=Gray
+set fillchars+=vert:\│
+hi VertSplit ctermfg=Black ctermbg=Black
+" highlight ColorColumn ctermbg=Black ctermfg=Black
+" highlight ColorColumn guibg=Gray
 
 " -----------------------------------------------------------------------------
 " NERDTree configuration
