@@ -1,5 +1,5 @@
 #!/bin/bash
-# cid.sh
+# functions/cid.sh
 
 # Container ID Search
 # quickly grab docker container ID for first match of search pattern
