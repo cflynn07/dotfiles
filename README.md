@@ -40,3 +40,4 @@ Notes:
   - [yank](https://github.com/mptre/yank)
 
 ![screenshot](https://raw.githubusercontent.com/cflynn07/dotfiles/master/Screen%20Shot%202019-12-29%20at%207.50.32%20PM.png)
+![screenshot](https://raw.githubusercontent.com/cflynn07/dotfiles/master/Screen%20Shot%202020-01-03%20at%201.57.51%20PM.png)
