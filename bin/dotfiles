@@ -47,6 +47,10 @@ sub_tools () {
     brew tap homebrew/cask-fonts
     brew cask install font-firacode-nerd-font-mono
 
+    # Gotop (pointless but fun)
+    brew tap cjbassi/gotop
+    brew install gotop
+
     # prebuild binary installs...
     brew cask install google-chrome
     brew cask install mailplane
