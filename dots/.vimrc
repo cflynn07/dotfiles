@@ -224,3 +224,8 @@ let g:user_emmet_leader_key=','
 " Vim-Rainbow
 
 " let g:rainbow_active = 1
+"
+" -----------------------------------------------------------------------------
+" vim-go
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
