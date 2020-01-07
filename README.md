@@ -28,6 +28,7 @@ Notes:
 - vim colorscheme: delek
 - tools:
   - [bropages](https://github.com/hubsmoke/bro) a CLI to interact with bropages.org (http://bropages.org)
+  - [glcoud](https://cloud.google.com/sdk/install)
   - [gotop](https://github.com/cjbassi/gotop) to flex...
   - [helm](https://github.com/helm/helm) Kubernetes Package Manager
   - [hexyl](https://github.com/sharkdp/hexyl) CLI hex viewer with nice color codings

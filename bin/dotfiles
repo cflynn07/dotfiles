@@ -79,12 +79,17 @@ sub_tools () {
     rm Docker.dmg
     cd PWD || exit 1
 
+    # install virtualbox...
     VIRTUAL_BOX="VirtualBox-6.1.0-135406-OSX.dmg"
     curl -LOC - "https://download.virtualbox.org/virtualbox/6.1.0/$VIRTUAL_BOX"
     sudo hdiutil attach "$VIRTUAL_BOX"
     sudo installer -pkg /Volumes/VirtualBox/VirtualBox.pkg -target /
     sudo hdiutil detach /Volumes/VirtualBox
     rm "$VIRTUAL_BOX"
+
+    # install gcloud
+    curl https://sdk.cloud.google.com > install.sh
+    bash install.sh --disable-prompts
 }
 
 # Just set the background to my preferred background image
