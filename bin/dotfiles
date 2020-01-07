@@ -43,6 +43,9 @@ sub_tools () {
       hexyl lynx kubernetes-helm \
       skaffold neovim neofetch
 
+    # helm diff plugin
+    helm plugin install https://github.com/databus23/helm-diff --version master
+
     # Fonts!
     brew tap homebrew/cask-fonts
     brew cask install font-firacode-nerd-font-mono

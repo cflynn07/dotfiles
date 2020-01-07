@@ -31,6 +31,7 @@ Notes:
   - [glcoud](https://cloud.google.com/sdk/install)
   - [gotop](https://github.com/cjbassi/gotop) to flex...
   - [helm](https://github.com/helm/helm) Kubernetes Package Manager
+    - [helm-diff](https://github.com/databus23/helm-diff) A helm plugin that shows a diff explaining what a helm upgrade would change
   - [hexyl](https://github.com/sharkdp/hexyl) CLI hex viewer with nice color codings
   - [lynx](https://lynx.invisible-island.net/current/index.html) IDK why not. 🤷‍
   - [peco](https://github.com/peco/peco)
