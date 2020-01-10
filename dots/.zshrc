@@ -82,3 +82,5 @@ if [ -f '/Users/casey/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/casey/goo
 if [ -f '/Users/casey/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/casey/google-cloud-sdk/completion.zsh.inc'; fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+source /Users/casey/Library/Preferences/org.dystroy.broot/launcher/bash/br

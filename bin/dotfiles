@@ -37,62 +37,79 @@ sub_symlinks () {
 }
 
 sub_tools () {
-    # Misc tools
-    brew install \
-      peco yank shellcheck \
-      hexyl lynx kubernetes-helm \
-      skaffold neovim neofetch
+  # Install Rust
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-    # helm diff plugin
-    helm plugin install https://github.com/databus23/helm-diff --version master
+  # update $PATH for cargo
+  # shellcheck disable=SC1090
+  source "$HOME/.zshrc"
 
-    # Fonts!
-    brew tap homebrew/cask-fonts
-    brew cask install font-firacode-nerd-font-mono
+  # Install broot
+  cargo install broot
 
-    # Gotop (pointless but fun)
-    brew tap cjbassi/gotop
-    brew install gotop
+  # Misc tools
+  brew install \
+    peco yank shellcheck \
+    hexyl lynx kubernetes-helm \
+    skaffold neovim neofetch
 
-    # prebuild binary installs...
-    brew cask install google-chrome
-    brew cask install mailplane
-    brew cask install iterm2
+  # helm diff plugin
+  helm plugin install https://github.com/databus23/helm-diff --version master
 
-    # Specify the preferences directory
-    defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DOTFILES_DIR/iterm2_profile"
-    # Tell iTerm2 to use the custom preferences in the directory
-    defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+  # Fonts!
+  brew tap homebrew/cask-fonts
+  brew cask install font-firacode-nerd-font-mono
 
-    gem install bropages
+  # Gotop (pointless but fun)
+  brew tap cjbassi/gotop
+  brew install gotop
 
-    pip3 install powerline-status
-    pip3 install --user powerline-status psutl
+  # prebuild binary installs...
+  brew cask install google-chrome
+  brew cask install mailplane
+  brew cask install iterm2
 
-    # install slate window management tool
-    cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
+  # Specify the preferences directory
+  defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DOTFILES_DIR/iterm2_profile"
+  # Tell iTerm2 to use the custom preferences in the directory
+  defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
-    # install Docker for mac...
-    PWD=$(pwd)
-    cd /tmp || exit 1
-    curl -LOC - https://download.docker.com/mac/stable/Docker.dmg
-    sudo hdiutil attach Docker.dmg
-    cp -r /Volumes/Docker/Docker.app /Applications
-    sudo hdiutil detach /Volumes/Docker
-    rm Docker.dmg
-    cd PWD || exit 1
+  gem install bropages
 
-    # install virtualbox...
-    VIRTUAL_BOX="VirtualBox-6.1.0-135406-OSX.dmg"
-    curl -LOC - "https://download.virtualbox.org/virtualbox/6.1.0/$VIRTUAL_BOX"
-    sudo hdiutil attach "$VIRTUAL_BOX"
-    sudo installer -pkg /Volumes/VirtualBox/VirtualBox.pkg -target /
-    sudo hdiutil detach /Volumes/VirtualBox
-    rm "$VIRTUAL_BOX"
+  pip3 install powerline-status
+  pip3 install --user powerline-status psutl
 
-    # install gcloud
-    curl https://sdk.cloud.google.com > install.sh
-    bash install.sh --disable-prompts
+  # install slate window management tool
+  cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
+
+  # install Docker for mac...
+  PWD=$(pwd)
+  cd /tmp || exit 1
+  curl -LOC - https://download.docker.com/mac/stable/Docker.dmg
+  sudo hdiutil attach Docker.dmg
+  cp -r /Volumes/Docker/Docker.app /Applications
+  sudo hdiutil detach /Volumes/Docker
+  rm Docker.dmg
+  cd PWD || exit 1
+
+  # install virtualbox...
+  VIRTUAL_BOX="VirtualBox-6.1.0-135406-OSX.dmg"
+  curl -LOC - "https://download.virtualbox.org/virtualbox/6.1.0/$VIRTUAL_BOX"
+  sudo hdiutil attach "$VIRTUAL_BOX"
+  sudo installer -pkg /Volumes/VirtualBox/VirtualBox.pkg -target /
+  sudo hdiutil detach /Volumes/VirtualBox
+  rm "$VIRTUAL_BOX"
+
+  # install gcloud
+  curl https://sdk.cloud.google.com > install.sh
+  bash install.sh --disable-prompts
+
+  # install broot
+  BROOT="v0.11.4.tar.gz"
+  curl -LOC - "https://github.com/Canop/broot/archive/$BROOT"
+  tar -zxf "$BROOT"
+  cd $BROOT || return
+
 }
 
 # Just set the background to my preferred background image
