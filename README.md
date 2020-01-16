@@ -27,11 +27,11 @@ Notes:
 - iTerm2 colorscheme: thayer
 - vim colorscheme: delek
 - tools:
-  - [helm-diff](https://github.com/databus23/helm-diff) A helm plugin that shows a diff explaining what a helm upgrade would change
   - [broot](https://github.com/Canop/broot) A new way to see and navigate directory trees
   - [bropages](https://github.com/hubsmoke/bro) a CLI to interact with bropages.org (http://bropages.org)
   - [glcoud](https://cloud.google.com/sdk/install)
   - [gotop](https://github.com/cjbassi/gotop) to flex...
+  - [helm-diff](https://github.com/databus23/helm-diff) A helm plugin that shows a diff explaining what a helm upgrade would change
   - [helm](https://github.com/helm/helm) Kubernetes Package Manager
   - [hexyl](https://github.com/sharkdp/hexyl) CLI hex viewer with nice color codings
   - [lynx](https://lynx.invisible-island.net/current/index.html) IDK why not. 🤷‍
@@ -40,6 +40,7 @@ Notes:
   - [skaffold](https://github.com/GoogleContainerTools/skaffold) Kubernetes local development tool
   - [slate](https://github.com/jigish/slate) OSX window management tool
   - [tig](https://github.com/jonas/tig)
+  - [tpm](https://github.com/tmux-plugins/tpm) - Tmux Plugin Manager
   - [yank](https://github.com/mptre/yank)
 
 ![screenshot](https://raw.githubusercontent.com/cflynn07/dotfiles/master/Screen%20Shot%202020-01-03%20at%201.57.51%20PM.png)
