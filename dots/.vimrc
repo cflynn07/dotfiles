@@ -90,6 +90,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'Asheq/close-buffers.vim'
+Plug 'tpope/vim-obsession'
 
 call plug#end()
 
@@ -99,6 +100,7 @@ call plug#end()
 let mapleader = ','
 let g:NERDTreeNodeDelimiter = "\u00a0"
 
+set autoread " Update buffer if underlying file changes on disk
 set autowrite
 set backspace=indent,eol,start
 set encoding=utf-8

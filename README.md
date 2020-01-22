@@ -27,6 +27,7 @@ Notes:
 - iTerm2 colorscheme: thayer
 - vim colorscheme: delek
 - tools:
+  - [asciinema](https://asciinema.org/) asciinema (formerly ascii.io) is a free and open source solution for recording terminal sessions and sharing them on the web.
   - [broot](https://github.com/Canop/broot) A new way to see and navigate directory trees
   - [bropages](https://github.com/hubsmoke/bro) a CLI to interact with bropages.org (http://bropages.org)
   - [glcoud](https://cloud.google.com/sdk/install)
@@ -42,5 +43,8 @@ Notes:
   - [tig](https://github.com/jonas/tig)
   - [tpm](https://github.com/tmux-plugins/tpm) - Tmux Plugin Manager
   - [yank](https://github.com/mptre/yank)
+  - tmux-continuum
+  - tmux-resurrect
+  - vim-obsession
 
 ![screenshot](https://raw.githubusercontent.com/cflynn07/dotfiles/master/Screen%20Shot%202020-01-03%20at%201.57.51%20PM.png)

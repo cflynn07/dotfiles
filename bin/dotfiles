@@ -60,7 +60,8 @@ sub_tools () {
   brew install \
     peco yank shellcheck \
     hexyl lynx kubernetes-helm \
-    skaffold neovim neofetch
+    skaffold neovim neofetch \
+    asciinema
 
   # helm diff plugin
   helm plugin install https://github.com/databus23/helm-diff --version master
