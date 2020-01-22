@@ -28,6 +28,7 @@ Notes:
 - vim colorscheme: delek
 - tools:
   - [asciinema](https://asciinema.org/) asciinema (formerly ascii.io) is a free and open source solution for recording terminal sessions and sharing them on the web.
+  - [mycli](https://www.mycli.net/) MyCLI is a command line interface for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.
   - [broot](https://github.com/Canop/broot) A new way to see and navigate directory trees
   - [bropages](https://github.com/hubsmoke/bro) a CLI to interact with bropages.org (http://bropages.org)
   - [glcoud](https://cloud.google.com/sdk/install)

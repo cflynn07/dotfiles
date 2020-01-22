@@ -56,12 +56,20 @@ sub_tools () {
   # install TPM - tmux plugin manager
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+  brew update
   # Misc tools
   brew install \
-    peco yank shellcheck \
-    hexyl lynx kubernetes-helm \
-    skaffold neovim neofetch \
-    asciinema
+    peco \
+    yank \
+    shellcheck \
+    hexyl \
+    lynx \
+    kubernetes-helm \
+    skaffold \
+    neovim \
+    neofetch \
+    asciinema \
+    mycli
 
   # helm diff plugin
   helm plugin install https://github.com/databus23/helm-diff --version master
