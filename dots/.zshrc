@@ -2,7 +2,7 @@
 # January 18, 2019
 
 export WORKSPACE_DIR=$HOME/Dropbox/workspace
-for source_target in $WORKSPACE_DIR/dotfiles/functions/*.sh; do
+for source_target in $WORKSPACE_DIR/dotfiles/shell-functions/*.sh; do
   source "$source_target"
 done
 

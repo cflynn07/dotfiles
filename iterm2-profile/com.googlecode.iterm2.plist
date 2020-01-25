@@ -52489,11 +52489,11 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>127 443 592 584 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 624 570 403 0 0 1680 1027 </string>
+	<string>0 0 836 1027 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>3184 -642 1501 1669 1680 -642 3008 1669 </string>
+	<string>1447 1050 3440 1417 1447 1050 3440 1440 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>2192 -501 570 403 1680 -642 3008 1669 </string>
+	<string>3184 594 1088 433 1680 -642 3008 1669 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -53111,8 +53111,14 @@
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
+			<key>Thin Strokes</key>
+			<integer>4</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
+			<key>Unicode Normalization</key>
+			<integer>0</integer>
+			<key>Unicode Version</key>
+			<integer>9</integer>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -53124,7 +53130,7 @@
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1</real>
+			<real>0.80000000000000004</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -53742,6 +53748,10 @@
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
+	<integer>1</integer>
 	<key>NoSyncFrame_SessionsPreferences</key>
 	<dict>
 		<key>screenFrame</key>
@@ -53754,7 +53764,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{269, 595}</string>
+		<string>{208, 826}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
@@ -53763,7 +53773,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>583090930.58847702</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>26</integer>
+	<integer>35</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -54498,6 +54508,8 @@
 	</dict>
 	<key>NoSyncSearchHistory2</key>
 	<array>
+		<string>helm</string>
+		<string>help</string>
 		<string>number</string>
 	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
@@ -54558,7 +54570,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-12-23T05:35:17Z</date>
+	<date>2020-01-24T10:38:56Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -54567,8 +54579,14 @@
 	<false/>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.44729609929078018</real>
+	<key>StatusBarPosition</key>
+	<integer>1</integer>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>6</integer>
+	<key>TabViewType</key>
+	<integer>0</integer>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1571287168</real>
 	<key>VisualIndicatorForEsc</key>

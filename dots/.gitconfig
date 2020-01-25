@@ -8,3 +8,5 @@ email = cflynn.us@gmail.com
 	insteadOf = https://gitlab.com/
 [hub]
 	protocol = ssh
+[core]
+	excludesfile = /Users/casey/.gitignore_global
