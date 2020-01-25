@@ -23,8 +23,9 @@ $ ./bin/dotfiles tools
 ```
 
 Notes:
-- Font: Fira Code (patched)
+- Font: Fura Code Nerd Font Mono
 - iTerm2 colorscheme: thayer
+- kitty colorscheme: thayer_bright
 - vim colorscheme: delek
 - tools:
   - [asciinema](https://asciinema.org/) asciinema (formerly ascii.io) is a free and open source solution for recording terminal sessions and sharing them on the web.
