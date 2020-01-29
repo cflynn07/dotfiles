@@ -76,7 +76,8 @@ sub_tools () {
     neofetch \
     asciinema \
     mycli \
-    pv
+    pv \
+    bat
 
   # helm diff plugin
   helm plugin install https://github.com/databus23/helm-diff --version master
