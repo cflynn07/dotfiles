@@ -84,3 +84,7 @@ if [ -f '/Users/casey/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/cas
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 source /Users/casey/Library/Preferences/org.dystroy.broot/launcher/bash/br
+
+# Set 'bat' as a color visualizor manpage viewer
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+man 2 select
