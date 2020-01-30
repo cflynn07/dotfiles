@@ -32,6 +32,7 @@ Notes:
   - [bat](https://github.com/sharkdp/bat) A cat(1) clone with wings.
   - [broot](https://github.com/Canop/broot) A new way to see and navigate directory trees
   - [bropages](https://github.com/hubsmoke/bro) a CLI to interact with bropages.org (http://bropages.org)
+  - [fd](https://github.com/sharkdp/fd) A simple, fast and user-friendly alternative to 'find'
   - [glcoud](https://cloud.google.com/sdk/install)
   - [gotop](https://github.com/cjbassi/gotop) to flex...
   - [helm-diff](https://github.com/databus23/helm-diff) A helm plugin that shows a diff explaining what a helm upgrade would change
