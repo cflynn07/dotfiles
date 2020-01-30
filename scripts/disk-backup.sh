@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Jan 29, 2020
 # Throwaway script I used to help a friend retreive .JPG files from external
 # hard drive. Renamed replacing spaces with underscores and directory structure
