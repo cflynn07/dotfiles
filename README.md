@@ -32,6 +32,7 @@ Notes:
   - [bat](https://github.com/sharkdp/bat) A cat(1) clone with wings.
   - [broot](https://github.com/Canop/broot) A new way to see and navigate directory trees
   - [bropages](https://github.com/hubsmoke/bro) a CLI to interact with bropages.org (http://bropages.org)
+  - [diskus](https://github.com/sharkdp/diskus) A minimal, fast alternative to 'du -sh'
   - [fd](https://github.com/sharkdp/fd) A simple, fast and user-friendly alternative to 'find'
   - [glcoud](https://cloud.google.com/sdk/install)
   - [gotop](https://github.com/cjbassi/gotop) to flex...

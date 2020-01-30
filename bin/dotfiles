@@ -78,7 +78,8 @@ sub_tools () {
     mycli \
     pv \
     bat \
-    fd
+    fd \
+    diskus
 
   # helm diff plugin
   helm plugin install https://github.com/databus23/helm-diff --version master
