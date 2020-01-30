@@ -27,6 +27,7 @@ sub_symlinks () {
     ln -sfv "$DOTFILES_DIR/dots/.slate" ~
     ln -sfv "$DOTFILES_DIR/dots/.tmux.conf" ~
     ln -sfv "$DOTFILES_DIR/dots/.vimrc" ~
+    ln -sfv "$DOTFILES_DIR/dots/.myclirc" ~
 
     mkdir -p ~/.config/nvim/
     ln -sfv "$DOTFILES_DIR/dots/.config/nvim/init.vim" ~/.config/nvim/init.vim
