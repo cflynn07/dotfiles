@@ -64,26 +64,24 @@ antigen theme bhilburn/powerlevel9k
 # Tell Antigen that you're done.
 antigen apply
 
-# Change zsh line editing module (zle) to use vi mode
+# By default, there is a 0.4 second delay after you hit the <ESC> key and when
+# the mode change is registered. This results in a very jarring and frustrating
+# transition between modes. Let's reduce this delay to 0.1 seconds.
 export KEYTIMEOUT=1
+
+# Change zsh line editing module (zle) to use vi mode
 bindkey -v
 
 PATH=$PATH:$HOME/go/bin
-PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
+# Maybe delete this...
+# PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
 export PATH
-
-# Prevent terminal from auto renaming tab titles
-export DISABLE_AUTO_TITLE="true"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/casey/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/casey/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/casey/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/casey/google-cloud-sdk/completion.zsh.inc'; fi
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-source /Users/casey/Library/Preferences/org.dystroy.broot/launcher/bash/br
 
 # Set 'bat' as a color visualizor manpage viewer
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"

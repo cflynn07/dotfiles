@@ -14,38 +14,52 @@ export DOTFILES_DIR EXTRA_DIR
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
 
 sub_help () {
-    echo -e "$ARROW Usage: ${YELLOW}$BIN_NAME <command>${NC}"
-    echo
-    echo "Commands:"
-    echo "   help             This help message"
-    echo "   symlinks         Run symlinks script"
+  echo -e "$ARROW Usage: ${YELLOW}$BIN_NAME <command>${NC}"
+  echo
+  echo "Commands:"
+  echo "   help             This help message"
+  echo "   symlinks         Run symlinks script"
 }
 
+# creating symlinks...
+# ex:
+# /Users/casey/Dropbox/workspace/dotfiles/homedir-config/.config/nvim/init.vim                         --> ~/.config/nvim/init.vim
+# /Users/casey/Dropbox/workspace/dotfiles/homedir-config/.config/powerline/colorschemes/default.json   --> ~/.config/powerline/colorschemes/default.json
+# /Users/casey/Dropbox/workspace/dotfiles/homedir-config/.config/powerline/themes/tmux/default.json    --> ~/.config/powerline/themes/tmux/default.json
+# /Users/casey/Dropbox/workspace/dotfiles/homedir-config/.config/kitty/kitty.conf                      --> ~/.config/kitty/kitty.conf
+# /Users/casey/Dropbox/workspace/dotfiles/homedir-config/.vim/autoload/plug.vim                        --> ~/.vim/autoload/plug.vim
+# /Users/casey/Dropbox/workspace/dotfiles/homedir-config/.tmux.conf                                    --> ~/.tmux.conf
+# /Users/casey/Dropbox/workspace/dotfiles/homedir-config/.zshrc                                        --> ~/.zshrc
+# /Users/casey/Dropbox/workspace/dotfiles/homedir-config/.gitignore_global                             --> ~/.gitignore_global
+# /Users/casey/Dropbox/workspace/dotfiles/homedir-config/antigen.zsh                                   --> ~/antigen.zsh
+# /Users/casey/Dropbox/workspace/dotfiles/homedir-config/.vimrc                                        --> ~/.vimrc
+# /Users/casey/Dropbox/workspace/dotfiles/homedir-config/.slate                                        --> ~/.slate
+# /Users/casey/Dropbox/workspace/dotfiles/homedir-config/.gitconfig                                    --> ~/.gitconfig
+# /Users/casey/Dropbox/workspace/dotfiles/homedir-config/.myclirc                                      --> ~/.myclirc
 sub_symlinks () {
-    ln -sfv "$DOTFILES_DIR/dots/.gitconfig" ~
-    ln -sfv "$DOTFILES_DIR/dots/.gitignore_global" ~
-    ln -sfv "$DOTFILES_DIR/dots/.slate" ~
-    ln -sfv "$DOTFILES_DIR/dots/.tmux.conf" ~
-    ln -sfv "$DOTFILES_DIR/dots/.vimrc" ~
-    ln -sfv "$DOTFILES_DIR/dots/.myclirc" ~
+  local homedirConfig
+  local files
 
-    mkdir -p ~/.config/nvim/
-    ln -sfv "$DOTFILES_DIR/dots/.config/nvim/init.vim" ~/.config/nvim/init.vim
-    ln -sfv "$DOTFILES_DIR/dots/.zshrc" ~
-    ln -sfv "$DOTFILES_DIR/configs/antigen.zsh" ~
+  homedirConfig="$DOTFILES_DIR/homedir-config"
+  files=$(find "$homedirConfig" -type f -name "*")
 
-    mkdir -p ~/.vim/autoload/
-    ln -sfv "$DOTFILES_DIR/configs/plug.vim" ~/.vim/autoload/plug.vim
+  echo "creating symlinks..."
+  for file in $files; do
+    # path with absolute path to this repo substring removed, representing
+    # relative path from ~ dir for symlinks
+    # ex: "~/$homeDirSymlinkRelativePath" == "~/.zshrc"
+    local homeDirSymlinkRelativePath
+    local symlinkAbsolutePath
 
-    mkdir -p ~/.config/powerline/colorschemes/
-    mkdir -p ~/.config/powerline/themes/tmux/
-    ln -sfv "$DOTFILES_DIR/dots/.config/powerline/colorschemes/default.json" ~/.config/powerline/colorschemes/default.json
-    ln -sfv "$DOTFILES_DIR/dots/.config/powerline/themes/tmux/default.json" ~/.config/powerline/themes/tmux/default.json
+    homeDirSymlinkRelativePath=${file#"$homedirConfig/"}
+    symlinkAbsolutePath="$HOME/$homeDirSymlinkRelativePath"
 
-    mkdir -p ~/.config/kitty/
-    ln -sfv "$DOTFILES_DIR/dots/.config/kitty/kitty.conf" ~/.config/kitty/kitty.conf
+    printf "%-100s $GREEN-->$NC %s\n" "$file" "~/$homeDirSymlinkRelativePath"
 
-    echo -e "${GREEN}$ARROW Success! Symlinks command finished.${NC}"
+    mkdir -p "$(dirname "$symlinkAbsolutePath")"
+    ln -sf "$file" "$HOME/$homeDirSymlinkRelativePath"
+  done
+  echo -e "${GREEN}$ARROW Success! Symlinks command finished.${NC}"
 }
 
 sub_tools () {
@@ -98,11 +112,6 @@ sub_tools () {
   brew cask install mailplane
   brew cask install iterm2
 
-  # Specify the preferences directory
-  defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DOTFILES_DIR/iterm2_profile"
-  # Tell iTerm2 to use the custom preferences in the directory
-  defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
-
   gem install bropages
 
   pip3 install powerline-status
@@ -133,13 +142,6 @@ sub_tools () {
   # install gcloud
   curl https://sdk.cloud.google.com > install.sh
   bash install.sh --disable-prompts
-
-  # install broot
-  BROOT="v0.11.4.tar.gz"
-  curl -LOC - "https://github.com/Canop/broot/archive/$BROOT"
-  tar -zxf "$BROOT"
-  cd $BROOT || return
-
 }
 
 # Just set the background to my preferred background image
