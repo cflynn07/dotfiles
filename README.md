@@ -28,7 +28,6 @@ Notes:
 - kitty colorscheme: thayer_bright
 - vim colorscheme: delek
 - tools:
-  - [adium](https://adium.im/) IRC client
   - [asciinema](https://asciinema.org/) asciinema (formerly ascii.io) is a free and open source solution for recording terminal sessions and sharing them on the web.
   - [bat](https://github.com/sharkdp/bat) A cat(1) clone with wings.
   - [broot](https://github.com/Canop/broot) A new way to see and navigate directory trees
@@ -41,6 +40,7 @@ Notes:
   - [helm-diff](https://github.com/databus23/helm-diff) A helm plugin that shows a diff explaining what a helm upgrade would change
   - [helm](https://github.com/helm/helm) Kubernetes Package Manager
   - [hexyl](https://github.com/sharkdp/hexyl) CLI hex viewer with nice color codings
+  - [irssi](https://irssi.org/) Terminal IRC client
   - [lynx](https://lynx.invisible-island.net/current/index.html) IDK why not. 🤷‍
   - [mycli](https://www.mycli.net/) MyCLI is a command line interface for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.
   - [peco](https://github.com/peco/peco)
