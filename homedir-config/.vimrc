@@ -82,6 +82,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Plug 'vim-syntastic/syntastic'
+
+" a vim plug-in which provides support for expanding abbreviations similar to emmet.
 Plug 'mattn/emmet-vim'
 " ---
 " emmet-vim is a vim plug-in which provides support for expanding

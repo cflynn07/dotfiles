@@ -80,21 +80,23 @@ sub_tools () {
   brew update
   # Misc tools
   brew install \
-    peco \
-    yank \
-    shellcheck \
-    hexyl \
-    lynx \
-    kubernetes-helm \
-    skaffold \
-    neovim \
-    neofetch \
     asciinema \
-    mycli \
-    pv \
     bat \
+    diskus \
     fd \
-    diskus
+    gnupg \
+    hexyl \
+    jq \
+    kubernetes-helm \
+    lynx \
+    mycli \
+    neofetch \
+    neovim \
+    peco \
+    pv \
+    shellcheck \
+    skaffold \
+    yank
 
   # helm diff plugin
   helm plugin install https://github.com/databus23/helm-diff --version master
@@ -110,13 +112,12 @@ sub_tools () {
   # prebuild binary installs...
   brew cask install google-chrome
   brew cask install mailplane
-  brew cask install iterm2
+  brew cask install kitty
 
   gem install bropages
 
   pip3 install powerline-status
   pip3 install --user powerline-status psutil
-  pip3 install kubernetes # kuberenetes python API
 
   # install slate window management tool
   cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz

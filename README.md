@@ -35,6 +35,7 @@ Notes:
   - [diskus](https://github.com/sharkdp/diskus) A minimal, fast alternative to 'du -sh'
   - [fd](https://github.com/sharkdp/fd) A simple, fast and user-friendly alternative to 'find'
   - [glcoud](https://cloud.google.com/sdk/install)
+  - [gnupg](https://www.gnupg.org/)
   - [gotop](https://github.com/cjbassi/gotop) to flex...
   - [helm-diff](https://github.com/databus23/helm-diff) A helm plugin that shows a diff explaining what a helm upgrade would change
   - [helm](https://github.com/helm/helm) Kubernetes Package Manager
