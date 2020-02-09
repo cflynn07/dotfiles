@@ -10,3 +10,5 @@ email = cflynn.us@gmail.com
 	protocol = ssh
 [core]
 	excludesfile = /Users/casey/.gitignore_global
+[commit]
+	gpgsign = true
