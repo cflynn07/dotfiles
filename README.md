@@ -28,6 +28,7 @@ Notes:
 - kitty colorscheme: thayer_bright
 - vim colorscheme: delek
 - tools:
+  - [adium](https://adium.im/) IRC client
   - [asciinema](https://asciinema.org/) asciinema (formerly ascii.io) is a free and open source solution for recording terminal sessions and sharing them on the web.
   - [bat](https://github.com/sharkdp/bat) A cat(1) clone with wings.
   - [broot](https://github.com/Canop/broot) A new way to see and navigate directory trees

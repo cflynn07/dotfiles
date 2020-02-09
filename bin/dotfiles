@@ -115,6 +115,7 @@ sub_tools () {
   brew cask install google-chrome
   brew cask install mailplane
   brew cask install kitty
+  brew cask install adium
 
   gem install bropages
 
