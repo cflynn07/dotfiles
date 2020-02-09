@@ -97,6 +97,8 @@ sub_tools () {
     shellcheck \
     skaffold \
     yank
+  # Note to self, SO answer for help configuring gpg
+  # https://stackoverflow.com/a/47087248/480807
 
   # helm diff plugin
   helm plugin install https://github.com/databus23/helm-diff --version master
