@@ -2,6 +2,8 @@
 [user]
 name = Casey Flynn
 email = cflynn.us@gmail.com
+	signingkey = 6B285C54813F8252
+	gpgsign = true
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
 [url "ssh://git@gitlab.com/"]
@@ -12,3 +14,5 @@ email = cflynn.us@gmail.com
 	excludesfile = /Users/casey/.gitignore_global
 [commit]
 	gpgsign = true
+[gpg]
+	program = gpg
