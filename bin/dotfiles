@@ -97,6 +97,7 @@ sub_tools () {
     pv \
     shellcheck \
     skaffold \
+    weechat \
     yank
   # Note to self, SO answer for help configuring gpg
   # https://stackoverflow.com/a/47087248/480807

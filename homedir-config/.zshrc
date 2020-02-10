@@ -12,7 +12,7 @@ alias python=/usr/local/bin/python3
 alias pip=/usr/local/bin/pip3
 
 # tmux
-export TERM="xterm-256color"
+# export TERM="xterm-256color"
 source /Users/$USER/antigen.zsh
 
 # open vim when entering visual mode for easier long command editing

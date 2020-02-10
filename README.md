@@ -50,6 +50,7 @@ Notes:
   - [slate](https://github.com/jigish/slate) OSX window management tool
   - [tig](https://github.com/jonas/tig)
   - [tpm](https://github.com/tmux-plugins/tpm) - Tmux Plugin Manager
+  - [weechat](https://weechat.org/) Terminal IRC Client
   - [yank](https://github.com/mptre/yank)
   - tmux-continuum
   - tmux-resurrect
