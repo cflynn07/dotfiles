@@ -48,6 +48,7 @@ Notes:
   - [shellcheck](https://github.com/koalaman/shellcheck) a static analysis tool for shell scripts
   - [skaffold](https://github.com/GoogleContainerTools/skaffold) Kubernetes local development tool
   - [slate](https://github.com/jigish/slate) OSX window management tool
+  - [sysbench](https://github.com/akopytov/sysbench) sysbench is a scriptable multi-threaded benchmark tool based on LuaJIT.
   - [tig](https://github.com/jonas/tig)
   - [tpm](https://github.com/tmux-plugins/tpm) - Tmux Plugin Manager
   - [weechat](https://weechat.org/) Terminal IRC Client

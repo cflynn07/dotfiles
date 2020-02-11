@@ -12,7 +12,7 @@ alias python=/usr/local/bin/python3
 alias pip=/usr/local/bin/pip3
 
 # tmux
-# export TERM="xterm-256color"
+export TERM="xterm-256color"
 source /Users/$USER/antigen.zsh
 
 # open vim when entering visual mode for easier long command editing
@@ -73,8 +73,10 @@ export KEYTIMEOUT=1
 bindkey -v
 
 PATH=$PATH:$HOME/go/bin
+# brew installed mysql-client
+# /usr/local/opt/mysql-client/bin
 # Maybe delete this...
-# PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
+PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
 export PATH
 
 # The next line updates PATH for the Google Cloud SDK.
