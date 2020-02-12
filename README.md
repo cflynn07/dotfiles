@@ -41,6 +41,7 @@ Notes:
   - [helm-diff](https://github.com/databus23/helm-diff) A helm plugin that shows a diff explaining what a helm upgrade would change
   - [helm](https://github.com/helm/helm) Kubernetes Package Manager
   - [hexyl](https://github.com/sharkdp/hexyl) CLI hex viewer with nice color codings
+  - [http_load](https://acme.com/software/http_load/) runs multiple http fetches in parallel, to test the throughput of a web server.
   - [irssi](https://irssi.org/) Terminal IRC client
   - [lynx](https://lynx.invisible-island.net/current/index.html) IDK why not. 🤷‍
   - [mycli](https://www.mycli.net/) MyCLI is a command line interface for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.

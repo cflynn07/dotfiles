@@ -87,6 +87,7 @@ sub_tools () {
     gnupg \
     gnuplot \
     hexyl \
+    http_load \
     irssi \
     jq \
     kubernetes-helm \
