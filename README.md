@@ -36,6 +36,7 @@ Notes:
   - [fd](https://github.com/sharkdp/fd) A simple, fast and user-friendly alternative to 'find'
   - [glcoud](https://cloud.google.com/sdk/install)
   - [gnupg](https://www.gnupg.org/)
+  - [gnuplot](http://www.gnuplot.info/) a portable command-line driven graphing utility
   - [gotop](https://github.com/cjbassi/gotop) to flex...
   - [helm-diff](https://github.com/databus23/helm-diff) A helm plugin that shows a diff explaining what a helm upgrade would change
   - [helm](https://github.com/helm/helm) Kubernetes Package Manager
@@ -53,8 +54,5 @@ Notes:
   - [tpm](https://github.com/tmux-plugins/tpm) - Tmux Plugin Manager
   - [weechat](https://weechat.org/) Terminal IRC Client
   - [yank](https://github.com/mptre/yank)
-  - tmux-continuum
-  - tmux-resurrect
-  - vim-obsession
 
 ![screenshot](https://raw.githubusercontent.com/cflynn07/dotfiles/master/Screen%20Shot%202020-01-03%20at%201.57.51%20PM.png)

@@ -1,7 +1,7 @@
 # Casey Flynn <cflynn.us@gmail.com>
 # January 18, 2019
 
-export WORKSPACE_DIR=$HOME/Dropbox/workspace
+export WORKSPACE_DIR=$HOME/MEGAsync/workspace
 for source_target in $WORKSPACE_DIR/dotfiles/shell-functions/*.sh; do
   source "$source_target"
 done
