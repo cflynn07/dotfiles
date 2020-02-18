@@ -28,6 +28,7 @@ Notes:
 - kitty colorscheme: thayer_bright
 - vim colorscheme: delek
 - tools:
+  - [amethyst](https://github.com/ianyh/Amethyst) OSX window management tool
   - [asciinema](https://asciinema.org/) asciinema (formerly ascii.io) is a free and open source solution for recording terminal sessions and sharing them on the web.
   - [bat](https://github.com/sharkdp/bat) A cat(1) clone with wings.
   - [broot](https://github.com/Canop/broot) A new way to see and navigate directory trees
@@ -52,7 +53,7 @@ Notes:
   - [slate](https://github.com/jigish/slate) OSX window management tool
   - [sysbench](https://github.com/akopytov/sysbench) sysbench is a scriptable multi-threaded benchmark tool based on LuaJIT.
   - [tig](https://github.com/jonas/tig)
-  - [tpm](https://github.com/tmux-plugins/tpm) - Tmux Plugin Manager
+  - [tpm](https://github.com/tmux-plugins/tpm) Tmux Plugin Manager
   - [weechat](https://weechat.org/) Terminal IRC Client
   - [yank](https://github.com/mptre/yank)
 
