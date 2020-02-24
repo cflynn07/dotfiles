@@ -44,6 +44,7 @@ Notes:
   - [hexyl](https://github.com/sharkdp/hexyl) CLI hex viewer with nice color codings
   - [http_load](https://acme.com/software/http_load/) runs multiple http fetches in parallel, to test the throughput of a web server.
   - [irssi](https://irssi.org/) Terminal IRC client
+  - [k9s](https://github.com/derailed/k9s) Kubernetes CLI To Manage Your Clusters In Style!
   - [lynx](https://lynx.invisible-island.net/current/index.html) IDK why not. 🤷‍
   - [mycli](https://www.mycli.net/) MyCLI is a command line interface for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.
   - [peco](https://github.com/peco/peco)

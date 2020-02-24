@@ -90,6 +90,7 @@ sub_tools () {
     http_load \
     irssi \
     jq \
+    k9s \
     kubernetes-helm \
     lynx \
     mycli \
