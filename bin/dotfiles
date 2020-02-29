@@ -101,6 +101,7 @@ sub_tools () {
     shellcheck \
     skaffold \
     sysbench \
+    tmuxinator \
     weechat \
     yank
   # Note to self, SO answer for help configuring gpg

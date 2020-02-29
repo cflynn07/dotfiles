@@ -54,6 +54,7 @@ Notes:
   - [slate](https://github.com/jigish/slate) OSX window management tool
   - [sysbench](https://github.com/akopytov/sysbench) sysbench is a scriptable multi-threaded benchmark tool based on LuaJIT.
   - [tig](https://github.com/jonas/tig)
+  - [tmuxinator](https://github.com/tmuxinator/tmuxinator) Manage complex tmux sessions easily
   - [tpm](https://github.com/tmux-plugins/tpm) Tmux Plugin Manager
   - [weechat](https://weechat.org/) Terminal IRC Client
   - [yank](https://github.com/mptre/yank)
