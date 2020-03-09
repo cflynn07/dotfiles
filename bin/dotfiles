@@ -128,6 +128,7 @@ sub_tools () {
 
   pip3 install powerline-status
   pip3 install --user powerline-status psutil
+  pip3 install wakatime
 
   # install slate window management tool
   cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz

@@ -94,6 +94,9 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'Asheq/close-buffers.vim'
 Plug 'tpope/vim-obsession'
 
+" time monitoring service so I can flex how much time I waste
+Plug 'wakatime/vim-wakatime'
+
 call plug#end()
 
 " -----------------------------------------------------------------------------

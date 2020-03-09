@@ -34,6 +34,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 # My personal bundles
 antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle sobolevn/wakatime-zsh-plugin # time monitoring service
 
 # Powerlevel9k configuration
 POWERLEVEL9K_MODE='nerdfont-complete' # Required by powerlevel9k
