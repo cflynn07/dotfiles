@@ -88,6 +88,7 @@ sub_tools () {
     gnuplot \
     hexyl \
     http_load \
+    innotop \
     irssi \
     jq \
     k9s \

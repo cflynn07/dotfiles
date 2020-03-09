@@ -43,6 +43,7 @@ Notes:
   - [helm](https://github.com/helm/helm) Kubernetes Package Manager
   - [hexyl](https://github.com/sharkdp/hexyl) CLI hex viewer with nice color codings
   - [http_load](https://acme.com/software/http_load/) runs multiple http fetches in parallel, to test the throughput of a web server.
+  - [innotop](https://github.com/innotop/innotop) A realtime terminal-based top-like monitor for MySQL
   - [irssi](https://irssi.org/) Terminal IRC client
   - [k9s](https://github.com/derailed/k9s) Kubernetes CLI To Manage Your Clusters In Style!
   - [lynx](https://lynx.invisible-island.net/current/index.html) IDK why not. 🤷‍
@@ -56,6 +57,7 @@ Notes:
   - [tig](https://github.com/jonas/tig)
   - [tmuxinator](https://github.com/tmuxinator/tmuxinator) Manage complex tmux sessions easily
   - [tpm](https://github.com/tmux-plugins/tpm) Tmux Plugin Manager
+  - [wakatime](https://wakatime.com/) A development time analytics service
   - [weechat](https://weechat.org/) Terminal IRC Client
   - [yank](https://github.com/mptre/yank)
 
