@@ -97,6 +97,7 @@ sub_tools () {
     mycli \
     neofetch \
     neovim \
+    nmap \
     peco \
     pv \
     shellcheck \

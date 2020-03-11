@@ -80,6 +80,9 @@ PATH=$PATH:$HOME/go/bin
 PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
 export PATH
 
+SYSBENCH_TESTS=/usr/local/Cellar/sysbench/1.0.19/share/sysbench
+export SYSBENCH_TESTS
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/casey/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/casey/google-cloud-sdk/path.zsh.inc'; fi
 

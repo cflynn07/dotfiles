@@ -48,6 +48,7 @@ Notes:
   - [k9s](https://github.com/derailed/k9s) Kubernetes CLI To Manage Your Clusters In Style!
   - [lynx](https://lynx.invisible-island.net/current/index.html) IDK why not. 🤷‍
   - [mycli](https://www.mycli.net/) MyCLI is a command line interface for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.
+  - [nmap](https://github.com/nmap/nmap) Nmap - the Network Mapper.
   - [peco](https://github.com/peco/peco)
   - [pv](http://www.ivarch.com/programs/pv.shtml) pipe viewer
   - [shellcheck](https://github.com/koalaman/shellcheck) a static analysis tool for shell scripts
