@@ -47,6 +47,7 @@ Notes:
   - [irssi](https://irssi.org/) Terminal IRC client
   - [k9s](https://github.com/derailed/k9s) Kubernetes CLI To Manage Your Clusters In Style!
   - [lynx](https://lynx.invisible-island.net/current/index.html) IDK why not. 🤷‍
+  - [magick](https://imagemagick.org/) Use ImageMagick® to create, edit, compose, or convert bitmap images.
   - [mycli](https://www.mycli.net/) MyCLI is a command line interface for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.
   - [nmap](https://github.com/nmap/nmap) Nmap - the Network Mapper.
   - [peco](https://github.com/peco/peco)

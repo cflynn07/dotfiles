@@ -94,6 +94,7 @@ sub_tools () {
     k9s \
     kubernetes-helm \
     lynx \
+    magick \
     mycli \
     neofetch \
     neovim \
