@@ -137,7 +137,7 @@ set nu
 
 " -----------------------------------------------------------------------------
 " Colorscheme
-colorscheme delek
+colorscheme OceanicNext
 set fillchars+=vert:\│
 hi VertSplit ctermfg=Black ctermbg=Black
 " highlight ColorColumn ctermbg=Black ctermfg=Black
@@ -215,9 +215,18 @@ let g:airline_theme='dark'
 " ale
 
 let g:ale_linters = {
-\   'javascript': ['standard'],
+\   'javascript': ['standard', 'standard-react'],
 \}
 let g:ale_fixers = {'javascript': ['standard']}
+" Enable completion where available.
+" This setting must be set before ALE is loaded.
+"
+" You should not turn this setting on if you wish to use ALE as a completion
+" source for other completion plugins, like Deoplete.
+let g:ale_completion_enabled = 1
+set omnifunc=ale#completion#OmniFunc
+let g:ale_lint_on_save = 1
+let g:ale_fix_on_save = 1
 
 " -----------------------------------------------------------------------------
 " Taboo
@@ -229,6 +238,11 @@ let g:taboo_renamed_tab_format=' %N %l(%W) '
 " Emmet
 
 let g:user_emmet_leader_key=','
+let g:user_emmet_settings = {
+\  'html' : {
+\    'quote_char': "'",
+\  },
+\}
 
 " -----------------------------------------------------------------------------
 " Vim-Rainbow
