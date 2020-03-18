@@ -45,6 +45,7 @@ Notes:
   - [http_load](https://acme.com/software/http_load/) runs multiple http fetches in parallel, to test the throughput of a web server.
   - [innotop](https://github.com/innotop/innotop) A realtime terminal-based top-like monitor for MySQL
   - [irssi](https://irssi.org/) Terminal IRC client
+  - [jq](https://github.com/stedolan/jq) Command-line JSON processor
   - [k9s](https://github.com/derailed/k9s) Kubernetes CLI To Manage Your Clusters In Style!
   - [lynx](https://lynx.invisible-island.net/current/index.html) IDK why not. 🤷‍
   - [magick](https://imagemagick.org/) Use ImageMagick® to create, edit, compose, or convert bitmap images.
