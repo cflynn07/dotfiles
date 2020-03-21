@@ -91,3 +91,11 @@ if [ -f '/Users/casey/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/cas
 
 # Set 'bat' as a color visualizor manpage viewer
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+# Search backwards and forwards with a pattern
+bindkey -M vicmd '/' history-incremental-pattern-search-backward
+bindkey -M vicmd '?' history-incremental-pattern-search-forward
+
+# set up for insert mode too
+bindkey -M viins '^R' history-incremental-pattern-search-backward
+bindkey -M viins '^F' history-incremental-pattern-search-forward
