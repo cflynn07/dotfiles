@@ -1,7 +1,9 @@
 dotfiles
 ========
 
-Simple dotfiles repo. Contains a bash script to quickly create symlinks
+Simple dotfiles repo. Contains a bash script to quickly create symlinks, brew/pip/node packages, etc
+
+![screenshot](https://raw.githubusercontent.com/cflynn07/dotfiles/master/Screen%20Shot%202020-01-03%20at%201.57.51%20PM.png)
 
 `antigen` used for zsh
 `plugged` used for vim
@@ -63,5 +65,3 @@ Notes:
   - [wakatime](https://wakatime.com/) A development time analytics service
   - [weechat](https://weechat.org/) Terminal IRC Client
   - [yank](https://github.com/mptre/yank)
-
-![screenshot](https://raw.githubusercontent.com/cflynn07/dotfiles/master/Screen%20Shot%202020-01-03%20at%201.57.51%20PM.png)
