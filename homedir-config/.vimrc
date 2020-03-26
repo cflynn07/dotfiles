@@ -97,6 +97,9 @@ Plug 'tpope/vim-obsession'
 " time monitoring service so I can flex how much time I waste
 Plug 'wakatime/vim-wakatime'
 
+" more colorschemes
+Plug 'rainglow/vim'
+
 call plug#end()
 
 " -----------------------------------------------------------------------------
@@ -138,8 +141,8 @@ set nu
 " -----------------------------------------------------------------------------
 " Colorscheme
 colorscheme OceanicNext
-set fillchars+=vert:\│
-hi VertSplit ctermfg=Black ctermbg=Black
+" set fillchars+=vert:\│
+" hi VertSplit ctermfg=Black ctermbg=Black
 " highlight ColorColumn ctermbg=Black ctermfg=Black
 " highlight ColorColumn guibg=Gray
 
