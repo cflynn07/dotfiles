@@ -126,6 +126,7 @@ sub_tools () {
   brew cask install mailplane
   brew cask install kitty
   brew cask install amethyst
+  brew cask install ngrok
 
   gem install bropages
 
