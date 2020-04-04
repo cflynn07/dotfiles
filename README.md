@@ -66,3 +66,4 @@ Notes:
   - [wakatime](https://wakatime.com/) A development time analytics service
   - [weechat](https://weechat.org/) Terminal IRC Client
   - [yank](https://github.com/mptre/yank)
+  - [yq](https://github.com/mikefarah/yq) a lightweight and portable command-line YAML processor

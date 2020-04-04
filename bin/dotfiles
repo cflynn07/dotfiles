@@ -106,9 +106,14 @@ sub_tools () {
     sysbench \
     tmuxinator \
     weechat \
-    yank
+    yank \
+    yq
   # Note to self, SO answer for help configuring gpg
   # https://stackoverflow.com/a/47087248/480807
+
+  # install sourcegraph cli
+  curl -L https://sourcegraph.com/.api/src-cli/src_darwin_amd64 -o /usr/local/bin/src
+  chmod +x /usr/local/bin/src
 
   # helm diff plugin
   helm plugin install https://github.com/databus23/helm-diff --version master
