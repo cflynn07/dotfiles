@@ -13,6 +13,38 @@ NC='\033[0m'
 export DOTFILES_DIR EXTRA_DIR
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
 
+# tools I manage with brew
+brewtools=(\
+  asciinema \
+  bat \
+  diskus \
+  fd \
+  gnupg \
+  gnuplot \
+  hexyl \
+  http_load \
+  innotop \
+  irssi \
+  jq \
+  k9s \
+  kubernetes-helm \
+  lynx \
+  imagemagick \
+  mycli \
+  neofetch \
+  neovim \
+  nmap \
+  peco \
+  pv \
+  shellcheck \
+  skaffold \
+  sysbench \
+  tmuxinator \
+  weechat \
+  yank \
+  yq \
+)
+
 sub_help () {
   echo -e "$ARROW Usage: ${YELLOW}$BIN_NAME <command>${NC}"
   echo
@@ -34,7 +66,7 @@ sub_help () {
 # /Users/casey/Dropbox/workspace/dotfiles/homedir-config/antigen.zsh                                   --> ~/antigen.zsh
 # /Users/casey/Dropbox/workspace/dotfiles/homedir-config/.vimrc                                        --> ~/.vimrc
 # /Users/casey/Dropbox/workspace/dotfiles/homedir-config/.slate                                        --> ~/.slate
-# /Users/casey/Dropbox/workspace/dotfiles/homedir-config/.gitconfig                                    --> ~/.gitconfig
+# /Users/casey/Dropbox/wojkspace/dotfiles/homedir-config/.gitconfig                                    --> ~/.gitconfig
 # /Users/casey/Dropbox/workspace/dotfiles/homedir-config/.myclirc                                      --> ~/.myclirc
 sub_symlinks () {
   local homedirConfig
@@ -79,36 +111,9 @@ sub_tools () {
 
   brew update
   # Misc tools
-  brew install \
-    asciinema \
-    bat \
-    diskus \
-    fd \
-    gnupg \
-    gnuplot \
-    hexyl \
-    http_load \
-    innotop \
-    irssi \
-    jq \
-    k9s \
-    kubernetes-helm \
-    lynx \
-    magick \
-    mycli \
-    neofetch \
-    neovim \
-    nmap \
-    peco \
-    pv \
-    shellcheck \
-    skaffold \
-    sysbench \
-    tmuxinator \
-    weechat \
-    yank \
-    yq
-  # Note to self, SO answer for help configuring gpg
+  brew install "${brewtools[@]}"
+
+    # Note to self, SO answer for help configuring gpg
   # https://stackoverflow.com/a/47087248/480807
 
   # install sourcegraph cli
@@ -163,6 +168,10 @@ sub_tools () {
   # install gcloud
   curl https://sdk.cloud.google.com > install.sh
   bash install.sh --disable-prompts
+}
+
+sub_tools_upgrade () {
+  brew upgrade "${brewtools[@]}"
 }
 
 # Just set the background to my preferred background image
