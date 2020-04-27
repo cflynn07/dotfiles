@@ -40,8 +40,9 @@ root: ~/
 
 windows:
   - logs:
-      layout: main-horizontal
+      layout: tiled
       panes:
+        - k9s
         - htop
         - mysqld:
           - cd /Users/casey/MEGAsync/workspace/mysql-crash-course
