@@ -59,7 +59,7 @@ Plug 'sheerun/vim-polyglot'
 
 " Plug 'vim-scripts/taglist.vim'
 " ---
-" The "Tag List" plugin is a source code browser plugin for Vim and provides
+" The \"Tag List\" plugin is a source code browser plugin for Vim and provides
 " an overview of the structure of source code files and allows you to
 " efficiently browse through source code files for different programming
 " languages.
@@ -100,7 +100,6 @@ Plug 'wakatime/vim-wakatime'
 " more colorschemes
 Plug 'rainglow/vim'
 Plug 'kristijanhusak/vim-hybrid-material'
-
 call plug#end()
 
 " -----------------------------------------------------------------------------
@@ -139,6 +138,15 @@ nnoremap <C-H> <C-W><C-H>
 " Enable line numbers
 set nu
 
+" use j/k keys to move through autocomplete suggestions
+inoremap <expr> j ((pumvisible())?("\<C-n>"):("j"))
+inoremap <expr> k ((pumvisible())?("\<C-p>"):("k"))
+
+" close the preview window when leaving the autocomplete suggestion menu
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+
+" set preview window to appear at bottom
+set splitbelow
 " -----------------------------------------------------------------------------
 " Colorscheme
 colorscheme OceanicNext
@@ -227,8 +235,9 @@ let g:ale_fixers = {'javascript': ['eslint']}
 "
 " You should not turn this setting on if you wish to use ALE as a completion
 " source for other completion plugins, like Deoplete.
-let g:ale_completion_enabled = 1
-set omnifunc=ale#completion#OmniFunc
+"let g:ale_completion_enabled = 1
+"set omnifunc=ale#completion#OmniFunc
+
 let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 
@@ -258,7 +267,7 @@ let g:user_emmet_settings = {
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 
-
+" set highlighting
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_fields = 1
@@ -267,16 +276,30 @@ let g:go_highlight_methods = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_types = 1
+
+" highlights any variables that are the same
 let g:go_auto_sameids = 1
+
+" auto imports dependencies when file saved
 let g:go_fmt_command = "goimports"
+
 " Error and warning signs.
 let g:ale_sign_error = '⤫'
 let g:ale_sign_warning = '⚠'
+
 " Enable integration with airline.
 let g:airline#extensions#ale#enabled = 1
+
 " see what type a highlighted variable is on statusline
 let g:go_auto_type_info = 1
+
 au FileType go nmap <F12> <Plug>(go-def)
 
+" CTRL-P search func defs in package
+au FileType go nmap <leader>gt :GoDeclsDir<cr>
 
-
+" set tabs to 4 spaces
+au FileType go set noexpandtab
+au FileType go set shiftwidth=4
+au FileType go set softtabstop=4
+au FileType go set tabstop=4
