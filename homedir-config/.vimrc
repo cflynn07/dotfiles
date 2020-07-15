@@ -4,6 +4,7 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fatih/vim-go'
 " Plug 'airblade/vim-gitgutter'
 " ---
@@ -97,9 +98,6 @@ Plug 'tpope/vim-obsession'
 " time monitoring service so I can flex how much time I waste
 Plug 'wakatime/vim-wakatime'
 
-" more colorschemes
-Plug 'rainglow/vim'
-Plug 'kristijanhusak/vim-hybrid-material'
 call plug#end()
 
 " -----------------------------------------------------------------------------
@@ -139,8 +137,8 @@ nnoremap <C-H> <C-W><C-H>
 set nu
 
 " use j/k keys to move through autocomplete suggestions
-inoremap <expr> j ((pumvisible())?("\<C-n>"):("j"))
-inoremap <expr> k ((pumvisible())?("\<C-p>"):("k"))
+" inoremap <expr> j ((pumvisible())?("\<C-n>"):("j"))
+" inoremap <expr> k ((pumvisible())?("\<C-p>"):("k"))
 
 " close the preview window when leaving the autocomplete suggestion menu
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif

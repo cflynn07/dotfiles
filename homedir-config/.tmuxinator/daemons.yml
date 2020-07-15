@@ -44,9 +44,8 @@ windows:
       panes:
         - k9s
         - htop
-        - mysqld:
-          - cd /Users/casey/MEGAsync/workspace/mysql-crash-course
-          - docker-compose up
+        - scratch:
+          - echo "good morning"
         - myblog-skaffold:
           - cd /Users/casey/MEGAsync/workspace/myblog
           - skaffold dev
