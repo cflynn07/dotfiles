@@ -40,10 +40,9 @@ root: ~/
 
 windows:
   - logs:
-      layout: tiled
+      layout: main-horizontal
       panes:
         - k9s
-        - htop
         - scratch:
           - echo "good morning"
         - myblog-skaffold:
