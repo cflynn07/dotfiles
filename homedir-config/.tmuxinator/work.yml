@@ -40,10 +40,14 @@ root: ~/
 
 windows:
   - dotfiles:
-     root: /Users/casey/MEGAsync/workspace/dotfiles
-     panes:
-       - vim -S Session.vim +"Obsess Session.vim" +NERDTree +"wincmd ="
+      root: /Users/casey/MEGAsync/workspace/dotfiles
+      panes:
+        - vim -S Session.vim +"Obsess Session.vim" +NERDTree +"wincmd ="
   - myblog:
-     root: /Users/casey/MEGAsync/workspace/myblog
-     panes:
-       - vim -S Session.vim +"Obsess Session.vim" +NERDTree +"wincmd ="
+      root: /Users/casey/MEGAsync/workspace/myblog
+      panes:
+        - vim -S Session.vim +"Obsess Session.vim" +NERDTree +"wincmd ="
+  - saigonbros:
+      root: /Users/casey/MEGAsync/workspace/saigonbros/api
+      panes:
+        - vim -S Session.vim +"Obsess Session.vim" +NERDTree +"wincmd ="

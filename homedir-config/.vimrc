@@ -225,9 +225,9 @@ let g:airline_theme='dark'
 " ale
 
 let g:ale_linters = {
-\   'javascript': ['eslint'],
+\   'javascript': ['standard'],
 \}
-let g:ale_fixers = {'javascript': ['eslint']}
+let g:ale_fixers = {'javascript': ['standard']}
 " Enable completion where available.
 " This setting must be set before ALE is loaded.
 "

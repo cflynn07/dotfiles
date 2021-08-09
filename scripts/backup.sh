@@ -20,7 +20,7 @@ declare -a FILE_LIST
 exec < "$CONFIG_FILE"
 while read -r FILE_NAME
 do
-  if [ -f "$FILE_NAME" ] || [ -d "$FILE_NAME" ]
+  if [ -f "$FILE_NAME" ] || [ -d "$FILE_NAME" ]z
   then
     FILE_LIST+=("$FILE_NAME")
   else
