@@ -47,7 +47,11 @@ windows:
       root: /Users/casey/MEGAsync/workspace/myblog
       panes:
         - vim -S Session.vim +"Obsess Session.vim" +NERDTree +"wincmd ="
-  - saigonbros:
+  - s-api:
       root: /Users/casey/MEGAsync/workspace/saigonbros/api
+      panes:
+        - vim -S Session.vim +"Obsess Session.vim" +NERDTree +"wincmd ="
+  - s-web:
+      root: /Users/casey/MEGAsync/workspace/saigonbros/web
       panes:
         - vim -S Session.vim +"Obsess Session.vim" +NERDTree +"wincmd ="
