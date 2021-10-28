@@ -98,6 +98,10 @@ Plug 'tpope/vim-obsession'
 " time monitoring service so I can flex how much time I waste
 Plug 'wakatime/vim-wakatime'
 
+" https://github.com/wesQ3/vim-windowswap
+" window swap utility
+Plug 'wesQ3/vim-windowswap'
+
 call plug#end()
 
 " -----------------------------------------------------------------------------
