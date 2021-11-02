@@ -44,7 +44,8 @@ windows:
       panes:
         - k9s
         - scratch:
-          - echo "good morning"
+          - cd /Users/casey/MEGAsync/workspace/saigonbros/web
+          - npm start
         - myblog-skaffold:
-          - cd /Users/casey/MEGAsync/workspace/myblog
+          - cd /Users/casey/MEGAsync/workspace/saigonbros/api
           - skaffold dev
