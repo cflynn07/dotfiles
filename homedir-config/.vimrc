@@ -232,6 +232,7 @@ let g:ale_linters = {
 \   'javascript': ['standard'],
 \}
 let g:ale_fixers = {'javascript': ['standard']}
+let g:ale_javascript_standard_options = '--parser @babel/eslint-parser'
 " Enable completion where available.
 " This setting must be set before ALE is loaded.
 "
@@ -305,3 +306,6 @@ au FileType go set noexpandtab
 au FileType go set shiftwidth=4
 au FileType go set softtabstop=4
 au FileType go set tabstop=4
+
+set list
+set listchars=tab:!·,trail:·

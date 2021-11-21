@@ -99,3 +99,6 @@ bindkey -M vicmd '?' history-incremental-pattern-search-forward
 # set up for insert mode too
 bindkey -M viins '^R' history-incremental-pattern-search-backward
 bindkey -M viins '^F' history-incremental-pattern-search-forward
+
+# Ignore node_modules
+export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
