@@ -65,5 +65,6 @@ Notes:
   - [tpm](https://github.com/tmux-plugins/tpm) Tmux Plugin Manager
   - [wakatime](https://wakatime.com/) A development time analytics service
   - [weechat](https://weechat.org/) Terminal IRC Client
+  - [xh](https://github.com/ducaale/xh) a friendly and fast tool for sending HTTP requests
   - [yank](https://github.com/mptre/yank)
   - [yq](https://github.com/mikefarah/yq) a lightweight and portable command-line YAML processor

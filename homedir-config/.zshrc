@@ -74,6 +74,7 @@ export KEYTIMEOUT=1
 bindkey -v
 
 PATH=$PATH:$HOME/go/bin
+PATH=$PATH:$HOME/bin
 # brew installed mysql-client
 # /usr/local/opt/mysql-client/bin
 # Maybe delete this...
