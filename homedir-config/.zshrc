@@ -1,15 +1,15 @@
 # Casey Flynn <cflynn.us@gmail.com>
 # January 18, 2019
 
-export WORKSPACE_DIR=$HOME/MEGAsync/workspace
+export WORKSPACE_DIR=$HOME/workspace
 for source_target in $WORKSPACE_DIR/dotfiles/shell-functions/*.sh; do
   source "$source_target"
 done
 
 alias git='hub'
 alias vim='nvim'
-alias python=/usr/local/bin/python3
-alias pip=/usr/local/bin/pip3
+alias python=/usr/bin/python3
+alias pip=/usr/bin/pip3
 
 # tmux
 export TERM="xterm-256color"
@@ -17,7 +17,7 @@ source /Users/$USER/antigen.zsh
 
 # open vim when entering visual mode for easier long command editing
 bindkey -M vicmd v edit-command-line
-EDITOR=/usr/local/bin/nvim
+EDITOR=/opt/homebrew/bin/nvim
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -79,6 +79,7 @@ PATH=$PATH:$HOME/bin
 # /usr/local/opt/mysql-client/bin
 # Maybe delete this...
 PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
+PATH=$PATH:$HOME/Library/Python/3.8/bin
 export PATH
 
 SYSBENCH_TESTS=/usr/local/Cellar/sysbench/1.0.19/share/sysbench
