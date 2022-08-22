@@ -2,7 +2,7 @@
 [user]
 name = Casey Flynn
 email = cflynn.us@gmail.com
-	signingkey = 6B285C54813F8252
+	signingkey = 4E77CCE83733AEB7
 	gpgsign = true
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/

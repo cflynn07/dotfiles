@@ -40,18 +40,18 @@ root: ~/
 
 windows:
   - dotfiles:
-      root: /Users/casey/MEGAsync/workspace/dotfiles
+      root: /Users/caseyflynn/workspace/dotfiles
       panes:
         - vim -S Session.vim +"Obsess Session.vim" +NERDTree +"wincmd ="
   - myblog:
-      root: /Users/casey/MEGAsync/workspace/myblog
+      root: /Users/caseyflynn/workspace/myblog
       panes:
         - vim -S Session.vim +"Obsess Session.vim" +NERDTree +"wincmd ="
   - s-api:
-      root: /Users/casey/MEGAsync/workspace/saigonbros/api
+      root: /Users/caseyflynn/workspace/saigonbros/api
       panes:
         - vim -S Session.vim +"Obsess Session.vim" +NERDTree +"wincmd ="
   - s-web:
-      root: /Users/casey/MEGAsync/workspace/saigonbros/web
+      root: /Users/caseyflynn/workspace/saigonbros/web
       panes:
         - vim -S Session.vim +"Obsess Session.vim" +NERDTree +"wincmd ="

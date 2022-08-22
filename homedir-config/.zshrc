@@ -85,12 +85,6 @@ export PATH
 SYSBENCH_TESTS=/usr/local/Cellar/sysbench/1.0.19/share/sysbench
 export SYSBENCH_TESTS
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/casey/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/casey/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/casey/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/casey/google-cloud-sdk/completion.zsh.inc'; fi
-
 # Set 'bat' as a color visualizor manpage viewer
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
@@ -104,3 +98,9 @@ bindkey -M viins '^F' history-incremental-pattern-search-forward
 
 # Ignore node_modules
 export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/caseyflynn/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/caseyflynn/bin/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/caseyflynn/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/caseyflynn/bin/google-cloud-sdk/completion.zsh.inc'; fi
