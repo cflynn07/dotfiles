@@ -24,6 +24,7 @@ brewtools=(\
   hexyl \
   http_load \
   imagemagick \
+  imgp \
   innotop \
   irssi \
   jq \
@@ -35,6 +36,7 @@ brewtools=(\
   neofetch \
   neovim \
   nmap \
+  parallel \
   peco \
   pv \
   shellcheck \
