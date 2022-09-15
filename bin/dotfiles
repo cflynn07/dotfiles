@@ -43,6 +43,7 @@ brewtools=(\
   shellcheck \
   skaffold \
   sysbench \
+  tmate \
   tmuxinator \
   weechat \
   xh \
