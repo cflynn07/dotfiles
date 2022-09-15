@@ -23,14 +23,15 @@ brewtools=(\
   gnuplot \
   hexyl \
   http_load \
+  imagemagick \
   innotop \
   irssi \
   jq \
   k9s \
   kubernetes-helm \
   lynx \
-  imagemagick \
   mycli \
+  ncdu \
   neofetch \
   neovim \
   nmap \
@@ -41,6 +42,7 @@ brewtools=(\
   sysbench \
   tmuxinator \
   weechat \
+  xh \
   yank \
   yq \
 )
