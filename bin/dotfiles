@@ -17,6 +17,7 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
 brewtools=(\
   asciinema \
   bat \
+  bcrypt \
   diskus \
   fd \
   gnupg \
