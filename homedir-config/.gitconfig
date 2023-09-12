@@ -9,7 +9,7 @@ email = cflynn.us@gmail.com
 [url "ssh://git@gitlab.com/"]
 	insteadOf = https://gitlab.com/
 [hub]
-	protocol = ssh
+	protocol = https
 [core]
 	excludesfile = /Users/casey/.gitignore_global
 	editor = nvim

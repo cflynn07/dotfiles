@@ -8,8 +8,8 @@ done
 
 alias git='hub'
 alias vim='nvim'
-alias python=/usr/bin/python3
-alias pip=/usr/bin/pip3
+# alias python=/usr/bin/python3
+# alias pip=/usr/bin/pip3
 
 # tmux
 export TERM="xterm-256color"
@@ -34,7 +34,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 # My personal bundles
 antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle sobolevn/wakatime-zsh-plugin # time monitoring service
+# antigen bundle sobolevn/wakatime-zsh-plugin # time monitoring service
 
 # Powerlevel9k configuration
 POWERLEVEL9K_MODE='nerdfont-complete' # Required by powerlevel9k
@@ -79,7 +79,7 @@ PATH=$PATH:$HOME/bin
 # /usr/local/opt/mysql-client/bin
 # Maybe delete this...
 PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
-PATH=$PATH:$HOME/Library/Python/3.8/bin
+# PATH=$PATH:$HOME/Library/Python/3.8/bin
 export PATH
 
 SYSBENCH_TESTS=/usr/local/Cellar/sysbench/1.0.19/share/sysbench
@@ -104,3 +104,19 @@ if [ -f '/Users/caseyflynn/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/caseyflynn/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/caseyflynn/bin/google-cloud-sdk/completion.zsh.inc'; fi
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/caseyflynn/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/caseyflynn/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/caseyflynn/opt/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/caseyflynn/opt/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

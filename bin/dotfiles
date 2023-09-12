@@ -15,6 +15,7 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
 
 # tools I manage with brew
 brewtools=(\
+  act \
   asciinema \
   bat \
   bcrypt \
@@ -31,6 +32,7 @@ brewtools=(\
   jq \
   k9s \
   kubernetes-helm \
+  lazydocker \
   lynx \
   mycli \
   ncdu \
