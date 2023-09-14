@@ -8,8 +8,6 @@ done
 
 alias git='hub'
 alias vim='nvim'
-# alias python=/usr/bin/python3
-# alias pip=/usr/bin/pip3
 
 # tmux
 export TERM="xterm-256color"
@@ -73,17 +71,8 @@ export KEYTIMEOUT=1
 # Change zsh line editing module (zle) to use vi mode
 bindkey -v
 
-PATH=$PATH:$HOME/go/bin
-PATH=$PATH:$HOME/bin
-# brew installed mysql-client
-# /usr/local/opt/mysql-client/bin
-# Maybe delete this...
-PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
-# PATH=$PATH:$HOME/Library/Python/3.8/bin
-export PATH
-
-SYSBENCH_TESTS=/usr/local/Cellar/sysbench/1.0.19/share/sysbench
-export SYSBENCH_TESTS
+#SYSBENCH_TESTS=/usr/local/Cellar/sysbench/1.0.19/share/sysbench
+#export SYSBENCH_TESTS
 
 # Set 'bat' as a color visualizor manpage viewer
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
@@ -120,3 +109,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+PATH=$PATH:$HOME/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
