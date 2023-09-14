@@ -26,6 +26,8 @@ antigen bundle pip
 antigen bundle lein
 antigen bundle command-not-found
 antigen bundle Dbz/kube-aliases
+antigen bundle agkozak/zsh-z
+antigen bundle MichaelAquilina/zsh-auto-notify
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
