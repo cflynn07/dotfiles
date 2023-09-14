@@ -47,11 +47,3 @@ windows:
       root: /Users/caseyflynn/workspace/myblog
       panes:
         - vim -S Session.vim +"Obsess Session.vim" +NERDTree +"wincmd ="
-  - s-api:
-      root: /Users/caseyflynn/workspace/saigonbros/api
-      panes:
-        - vim -S Session.vim +"Obsess Session.vim" +NERDTree +"wincmd ="
-  - s-web:
-      root: /Users/caseyflynn/workspace/saigonbros/web
-      panes:
-        - vim -S Session.vim +"Obsess Session.vim" +NERDTree +"wincmd ="
