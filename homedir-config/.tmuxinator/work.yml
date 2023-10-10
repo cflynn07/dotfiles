@@ -40,6 +40,10 @@ root: ~/
 
 windows:
   - dotfiles:
+      root: /Users/caseyflynn/workspace/
+      panes:
+        - vim notes.md
+  - dotfiles:
       root: /Users/caseyflynn/workspace/dotfiles
       panes:
         - vim -S Session.vim +"Obsess Session.vim" +NERDTree +"wincmd ="

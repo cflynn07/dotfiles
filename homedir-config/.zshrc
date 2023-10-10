@@ -114,3 +114,5 @@ unset __conda_setup
 PATH=$PATH:$HOME/bin
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+export BOOST_ROOT=/opt/homebrew/Cellar/boost/1.82.0_1

@@ -5,6 +5,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mhartington/oceanic-next'
 Plug 'fatih/vim-go'
 " Plug 'airblade/vim-gitgutter'
 " ---
@@ -91,7 +92,7 @@ Plug 'mattn/emmet-vim'
 " abbreviations similar to emmet.
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
-Plug 'rafi/awesome-vim-colorschemes'
+" Plug 'rafi/awesome-vim-colorschemes'
 Plug 'Asheq/close-buffers.vim'
 Plug 'tpope/vim-obsession'
 
@@ -148,6 +149,16 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 set splitbelow
 " -----------------------------------------------------------------------------
 " Colorscheme
+" For Neovim 0.1.3 and 0.1.4
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
+" Or if you have Neovim >= 0.1.5
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+" Theme
+syntax enable
 colorscheme OceanicNext
 " set fillchars+=vert:\│
 " hi VertSplit ctermfg=Black ctermbg=Black
